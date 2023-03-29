@@ -1,0 +1,39 @@
+body{
+    margin: 0 auto;
+    background-image: radial-gradient(#e48585, #9198e5);
+    height: 100%;    
+    
+}
+
+.header{
+   text-align:center;
+   padding: 10px 0px;
+}
+h4 {
+    background-color: white;
+
+    padding: 10px;
+}
+main{
+    text-align: ;
+}
+#container{
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: left;
+}
+figcaption{
+    text-align: center;
+}
+.featured {
+    border-left: 1px solid #ffffff;
+    padding-left: 6px;
+    color: blueviolet;
+    font-size: 0.8em;
+}
+.featured p{
+    margin:0 ;
+}
+hr{
+    border-bottom: 1px solid white;
+}
