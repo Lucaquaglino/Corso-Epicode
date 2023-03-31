@@ -1,0 +1,136 @@
+/* IMPOSTAZIONI GENERALI */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+   
+}
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.65em;
+    margin: 0;
+    text-align: center;
+    color: #393d41; 
+}
+/* HEADER */
+header{
+    margin-bottom:30px;
+}
+
+#header-logo {
+    background-color: black;
+    padding: 2em;
+    text-align: left;
+}
+
+#header-text{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 4em;
+    
+}
+#header-text h1{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin: 0;
+    
+}
+#header-text p{
+    margin-bottom: 3em;
+}
+#header-text a{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    background-color: #f04c2f;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+/* SECTION */
+section h2, h3{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+#image-radius img{
+    border-radius: 500px;
+    margin-bottom: 100px;
+   float: left;
+   margin-right: 200px;
+   margin-left: 100px;
+   margin-top: 50px;
+   
+   
+ 
+}
+
+#section-inline{
+    text-align: left;
+    padding-left: 100px;
+}
+/* BOX CITAZIONE */
+#citazione{
+    background-color: #e22d0e;
+    color: white;
+    padding: 2.5em 1em;
+  
+
+}
+#citazione h2{
+    color: white;
+    font-size: 2em;
+}
+#citazione p:nth-child(3){
+    font-size: 1.5em;
+    
+}
+#citazione p{
+    margin: 0;
+}
+/* CARD */
+.card-1{
+    border: 1px solid #dee1e3;
+    margin: 2em 1em;
+    border-radius: 0 0 5px 5px;
+    display: inline-block;
+    width: 30%;
+    
+    
+    
+   
+}
+.card-1 img{
+    max-width: 100%;
+}
+/* FOOTER */
+#footer{
+    background-color: #25a2c3;
+    color: white;
+    margin: 0;
+}
+hr{
+    border: 1px solid #c8e7f0;
+    width: 20%;
+}
+#footer p ~ p{
+    margin: 0;
+    color: #c8e7f0;
+
+
+}
+#footer p:first-child{
+    padding-top: 50px;
+    font-size: 2em;
+    font-weight: bold;
+   
+}
+
+footer a{
+    color: #c8e7f0;
+}
