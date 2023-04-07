@@ -1,0 +1,162 @@
+/* IMPOSTAZIONI GENERALI */
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #E9EDEE;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* HEADER */
+
+#header-logo{
+    background-color: #222F3F;
+    text-align: left;
+    padding: 1em 32px;
+}
+
+#header-logo img{
+    width: 8%;
+}
+
+nav{
+    background-color:#364757;
+    padding: 10px 10px 10px 32px;
+    text-align: left;
+}
+
+ul{
+    list-style-type: none;
+    padding:0;
+    margin: 0;
+}
+
+li{
+    display: inline-block;
+    padding: 0 10px 0 0;
+}
+
+li a{
+    text-decoration: none;
+    color: #E9EDEE;
+}
+
+
+/* MAIN */
+
+main{
+    padding: 0 32px;
+}
+
+main>h3{
+    color: #E9EDEE;
+    background-color: #F56600;
+    padding: 0.5em;
+    font-weight: lighter;
+    font-size: 0.9em;
+}
+
+#banner{
+    background-image: url(../images/bg-image.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 3.5em;
+    margin-bottom: 2em;
+}
+
+#banner h1 , #banner p{
+    color: #E9EDEE;
+}
+
+
+/*SECTION*/
+
+#card-section{
+    background-color: white;
+    margin-bottom: 2em;
+}
+
+#text-link{
+    text-align: left;
+    padding-left: 2.5em;
+}
+
+#text-link h3{
+display: inline-block;
+font-weight: lighter;
+padding-right: 0.5em;
+}
+
+#text-link a, #text-link p{
+    display: inline-block;
+    text-decoration: none;
+    color: #0A4C5A;
+    font-weight: bold;
+}
+
+
+/* CARD */
+
+.cards{
+    display: inline-block;
+    margin-bottom: 1.5em;
+}
+
+.cards img{
+    object-fit:cover;
+    width: 18em;
+    height: 25em;
+    border-radius: 2em;
+    margin:0 1.9em;
+    box-shadow: 6px 6px 5px rgb(226, 220, 220);
+}
+
+
+/*IMGSECTION*/
+
+.imgsection  img{
+    width: 100%;
+
+}
+
+.text-imgsection h3{
+    display: inline-block;
+    font-weight: lighter;
+    padding-right: 0.5em;
+}
+    
+.text-imgsection a, .text-imgsection p{
+        display: inline-block;
+        text-decoration: none;
+        color: #0A4C5A;
+        font-weight: bold;
+}
+
+
+/* FOOTER */
+
+#btt-footer{
+    background-color: #364757;
+    padding: 10px 10px 10px 32px;
+}
+
+#btt-footer a{
+    color: white;
+}
+
+#footer-logo{
+    background-color: #222F3F;    
+}
+
+#footer-logo img{
+    width: 15%;
+    padding: 40px;
+    margin: 40px ;
+}
+
