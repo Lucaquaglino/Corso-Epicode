@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Welcome</title>
+</head>
+
+<body>
+    <!-- Container -->
+    <div id="welcomeContainer" class="container">
+        <!-- Header -->
+        <header>
+            <!-- Logo -->
+            <img id="logoEpicode" alt="logo_epicode" src="assets/img/epicode_logo.png">
+        </header>
+        <!-- Main -->
+        <main>
+            <!-- Istructions -->
+            <h1>Welcome to<br><b>your exam</b></h1>
+            <section id="instructions">
+                <h2 id="instructionsTitle" class="purple">Instructions</h2>
+                <p id="instructionsPar">We don't expect most engineers to know the answers to all of these<br>questions,
+                    so don't worry if you're unsure of a few of them</p>
+                <ul id="instructionList">
+                    <li>Each question is <b>time </b>and can only be <b>answered once.</b></li>
+                    <li>Changing browser tab or opening other windows will <b>invalidate the question.</b></li>
+                    <li>This exam will take approx. <b>0-5 minutes.</b></li>
+                </ul>
+            </section>
+            <!-- Bottom Box -->
+            <section id="bottomBox">
+                <div id="formCheck">
+                    <!-- Difficult Select -->
+                    <h3 id="titleDifficulSelect"> Choose difficulty </h3>
+                    <div class="select">
+                        <select id="selectDifficult" name="difficult">
+                            <option class="alignDifficulty" value=""></option>
+                            <option class="alignDifficulty" value="easy">Easy</option>
+                            <option class="alignDifficulty" value="Hard">Hard</option>
+                        </select><br>
+                    </div>
+                    <!-- Checkbox terms -->
+                    <input type="checkbox" id="terms"><label id="labelCheckbox" for="checkbox">I promise to answer myself without help from anyone</label>
+                </div>
+                <!-- Button Proceed -->
+                <div id="boxButton">
+                    <a href="question.html"><button id="proceedButton" type="button" class="offProceed">PROCEED</button></a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="assets/js/welcomeScript.js"></script>
+</body>
+
+</html>

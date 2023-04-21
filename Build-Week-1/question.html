@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Question</title>
+</head>
+
+<body>
+    <!-- Container -->
+    <div id="questionContainer" class="container">
+        <!-- Header -->
+        <header id="headerQuestion">
+            <!-- Logo -->
+            <img id="logoEpicode" alt="logo_epicode" src="assets/img/epicode_logo.png">
+            <!-- Timer -->
+            <div id="timer">
+                <div id="timerCircle">
+                    <div id="innerCircle">
+                        <p class="innerP">SECONDS</p>
+                        <p id="seconds"></p>
+                        <p class="innerP">REMAINING</p>
+                        <canvas id="timerCanvas" width="200" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main -->
+        <main>
+            <!-- Question -->
+            <h1 id="question"></h1>
+            <!-- Answers -->
+            <div id="answers">
+                
+            </div>
+            <!-- Question Tracker -->
+            <div id="questionTracker">
+                <h3 id="questionNumber">QUESTION <span id="number"></span> / <span id="questionLength" class="purple"></span></h3>
+            </div>
+            <!-- Button Next -->
+            <div id="nextButtonBox">
+                <button id="nextButton" type="button" class="blueButton">NEXT</button>
+            </div>
+        </main>
+    </div>
+    <script src="assets/js/questionScript.js"></script>
+</body>
+
+</html>

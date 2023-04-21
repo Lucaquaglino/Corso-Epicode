@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Result</title>
+</head>
+
+<body>
+    <div id="resultsContainer" class="container">
+        <!-- Header -->
+        <header id="headerResult">
+            <img id="logoEpicode" alt="logo_epicode" src="assets/img/epicode_logo.png">
+        </header>
+        <!-- Main -->
+        <main>
+            <!-- Titolo result -->
+            <div id="resultTitle">
+                <h1>Results</h1>
+                <h2>The summary of your answers:</h2>
+            </div>
+            <!-- Result Container -->
+            <div id="resultBox">
+                <!-- Correct Answers  -->
+                <div id="correctAnswers" class="noGlow align">
+                    <h2>Correct</h2>
+                    <h2><span id="correct"></span> %</h2>
+                    <p><span id="numberCorrect"></span> / <span class="totalQuestions"></span> questions</p>
+                </div>
+                <!-- Grafico del risultato -->
+                <div id="graphicResults" class="align">
+                    <div id="innerResult" >
+                        
+                    </div>
+                    <canvas id="myCanvas" width="400" height="400"></canvas>
+                </div>
+                <!-- Wrong Answers  -->
+                <div id="wrongAnswers" class="noGlow align">
+                    <h2>Wrong</h2>
+                    <h2><span id="wrong"></span> %</h2>
+                    <p><span id="numberWrong"></span> / <span class="totalQuestions"></span> questions</p>
+                </div>
+            </div>
+            <!-- Bottom -->
+            <div id="buttonRateUs">
+                <a href="review.html"><button id="rateUs">RATE US</button></a>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/resultScript.js"></script>
+</body>
+
+</html>
