@@ -1,0 +1,134 @@
+html,
+body {
+  height: 100vh;
+  color: #742305;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navBar {
+  display: flex;
+  background-color: #fbf7e3;
+  justify-content: space-between;
+  align-items: center;
+}
+.items {
+  border-radius: 40px;
+  background-color: #f3df85;
+  padding: 0.5em 1em;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.itemsLarge {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em 1.5em;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card img {
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+}
+.card {
+  width: 45%;
+  background-color: #fbf7e3;
+  border-radius: 30px;
+  margin-bottom: 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.card button {
+  background-color: #ffdf7f;
+  border-radius: 30px;
+  width: 60%;
+  border: none;
+  color: #742305;
+  height: 30px;
+  margin-bottom: 1em;
+}
+h1 {
+  margin-left: 0.5em;
+}
+
+.sectionText {
+  display: flex;
+  flex-direction: column;
+  margin: 0.8em;
+}
+
+.text {
+  background-color: #fbf7e3;
+  border-radius: 30px;
+  padding: 0.8em;
+}
+.text img {
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  #container {
+    display: flex;
+  }
+  #navBar {
+    padding: 1em 1em;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .itemsLarge {
+    padding: 1.5em 1.5em;
+  }
+  .items {
+    padding: 2em 3em;
+    margin: 0.5em;
+    width: 50%;
+    font-size: 0.9em;
+  }
+
+  #navBar .items:nth-child(2) {
+    order: 3;
+  }
+
+  #navBar .items:nth-child(1) {
+    order: 2;
+  }
+
+  #navBar .items:nth-child(4) {
+    order: 4;
+  }
+
+  #navBar .items:nth-child(5) {
+    order: 5;
+  }
+
+  .card {
+    width: 22%;
+  }
+  .card-content {
+    font-size: 0.6em;
+
+    text-align: center;
+  }
+
+  .card button {
+    font-size: 0.6em;
+  }
+}
