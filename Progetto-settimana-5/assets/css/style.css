@@ -457,5 +457,9 @@ main {
   .aside-tags button{
     font-size: 0.8em;
   }
+
+  .date-article button {
+    font-size: 0.8em;
+  }
 }
 
