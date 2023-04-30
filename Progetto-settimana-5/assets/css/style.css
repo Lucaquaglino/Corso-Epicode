@@ -449,12 +449,13 @@ main {
     height: 78px;
     margin-left: 4px;
   }
-}
-#main-sticky {
+  #main-sticky {
   
-  font-size: 0.7em;
+    font-size: 0.7em;
+  }
+  
+  .aside-tags button{
+    font-size: 0.8em;
+  }
 }
 
-.aside-tags button{
-  font-size: 0.8em;
-}
