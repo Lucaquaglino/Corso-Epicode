@@ -20,12 +20,12 @@ body {
   justify-content: center;
   position: fixed;
   top: 0;
-  padding: 1em;
+  padding: 0.4em 0;
   z-index: 1;
 }
 
 #headerContainer {
-  width: 64%;
+  width: 87%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,16 +64,20 @@ a {
   background-color: #ffc017;
   border-bottom: solid 1px #191919;
   padding-top: 5em;
+  padding-left: 0;
+  padding-right: 0;
+
 }
 
 .primoBlocco {
-  width: 82%;
+  width: 93.5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
+  
 
-  /* height: 400px; 
- position: relative;*/
+ 
 }
 
 .primoBlocco-button {
@@ -98,14 +102,6 @@ h2 {
   font-weight: lighter;
 }
 
-#m {
-  /* position: absolute; 
-top: 0;
-right: 0;
-height: 100%;
-width: 450px;*/
-}
-
 .primoBlocco-text {
   white-space: nowrap;
 }
@@ -121,12 +117,12 @@ width: 450px;*/
   transition: all 500ms linear;
 }
 .green-button-off {
-    background-color: #191919;
-    color: white;
-    border-radius: 25px;
-    padding: 8px 1em;
-    border: 0;
-    transition: all 500ms linear ;
+  background-color: #191919;
+  color: white;
+  border-radius: 25px;
+  padding: 8px 1em;
+  border: 0;
+  transition: all 500ms linear;
 }
 .navChange {
   width: 100%;
@@ -136,26 +132,25 @@ width: 450px;*/
   justify-content: center;
   position: fixed;
   top: 0;
-  padding: 1em;
+  padding: 0.4em 0;
   transition: all 500ms linear;
 }
 .head-off {
-    width: 100%;
-    background-color: #ffc017;
-    border-bottom: solid 1px #191919;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    padding: 1em;
-    
-    transition: all 500ms linear;
-  }
+  width: 100%;
+  background-color: #ffc017;
+  border-bottom: solid 1px #191919;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  padding: 0.4em 0;
+  transition: all 500ms linear;
+}
 
 .trend {
   display: flex;
   flex-direction: column;
-  width: 64%;
+  width: 87%;
 }
 
 .trend-container {
@@ -168,30 +163,39 @@ width: 450px;*/
 .container-trend-title {
   display: flex;
   justify-content: flex-start;
-  margin: 2em 0;
+  margin: 3em 0 0.4em 0;
   margin-right: 100px;
   font-size: small;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   gap: 1em;
+  font-size: 0.8em;
 }
 
 .single-article {
   display: flex;
   justify-content: flex-start;
+  align-items: first baseline;
   width: 30%;
   gap: 2em;
   margin-bottom: 1.5em;
+  font-size: 0.9em;
 }
 
 .single-article span {
   font-weight: bolder;
   font-size: 2em;
   color: #eaeaea;
+  margin: 6px;
 }
 
 .article-author {
   display: flex;
   gap: 1em;
+  align-items: center;
+  font-size: 0.9em;
+}
+.article-author p{
+  margin: 6px;
 }
 
 .trend-list {
@@ -201,122 +205,154 @@ width: 450px;*/
 }
 
 #img1 {
-  border-radius: 50%;
-  height: 100%;
+  border-radius: 40%;
+ width: 1.5em;
+ height: 1.5em;
 }
 
-.main-article {
+.article-content p:nth-child(3) {
+  color: #9a9797;
   display: flex;
-  justify-content: flex-start;
-  margin-bottom: 2em;
   align-items: center;
+  gap: 0.2em;
 }
-
-.main-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.article-content p{
+  margin: 6px;
 }
+/* MAIN ARTICOLI */
 
-.main-container {
-  width: 64%;
-  display: flex;
-  justify-content: space-between;
-  gap: 7em;
-
-}
 main {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
-
-.side-container {
+#main-container {
   display: flex;
-  flex-direction: column;
-  position:sticky;
-  top: 160px;
-  align-self: flex-start;
-  width: 40%;
-  
+  width: 87%;
+  justify-content: space-between;
+  gap: 6em;
+  align-items: start;
 }
 
-
-
-aside {
-  width: 80%;
-
-  border-bottom: 1px solid rgb(190, 186, 186);
-  margin-bottom: 1em;
-}
-
-aside p {
-  margin: 0;
-}
-
-.tags {
-  margin-bottom: 1em;
-}
-
-.tags,
-footer {
+#section-article {
   display: flex;
   flex-wrap: wrap;
+  width: 1600px;
 }
 
-.tags a {
-  border: solid 1px gray;
-  border-radius: 8px;
+.autore-article {
+  display: flex;
+  align-items: center;
+}
+.autore-article p{
+  margin: 9px 0;
+}
+
+.autore-article img {
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+}
+.article-n {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 2em;
+}
+.article-senzaImg {
+  display: flex;
+  flex-direction: column;
+}
+
+.copertina-articolo img {
+  width: 200px;
+  height: 134px;
+  margin-left: 40px;
+}
+
+.contenuto-article {
+  display: flex;
+  flex-direction: column;
+}
+#title-text-article{
+  color: #191919;
+  font-size: 1.2em;
+  font-weight:800;
+}
+
+.contenuto-article p {
+  margin: 4px 0;
+  color: #9a9797;
+}
+
+.title-text-article{
+  color: #191919;
+}
+
+.date-article {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
   
-  margin: 5px 8px;
+}
+
+
+.bookmarks {
+  display: flex;
+}
+
+.date-article object {
+  float: inline-end;
+}
+
+.date-article p {
+  margin: 9px 0;
+}
+.span-categoria{
+border-radius: 30px;
+background-color: #eaeaea;
+padding: 3px 7px;
+}
+
+
+#main-sticky {
+  position: relative;
+ 
+}
+
+#aside-sticky {
+  position: sticky;
+  top: 170px;
+}
+
+.aside-container {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #c2c2c2;
+}
+.aside-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+.aside-tags a {
+  color: #9a9797;
+  border: 1px solid #c2c2c2;
+  border-radius: 2px;
+  padding: 4px 8px;
+  margin: 10px;
   margin-left: 0;
-  font-size: small;
-  color: #1c1b1b;
-  opacity: 0.5;
-  padding: 4px 6px;
 }
 
-footer {
-  width: 80%;
+#footer-container a {
+  margin: 10px;
+  display: inline-block;
+  color: #9a9797;
+  margin-left: 0;
 }
-
-footer a {
-  margin: 5px 0;
-  color: #1c1b1b;
-  opacity: 0.5;
-  padding: 8px 1em;
-  padding-left: 0;
+/* CLASSE per JS ANIMAZIONE M */
+.invisible {
+  opacity: 0;
+  transition: 0.5s;
 }
 
 
-.main-single-article img{
-    border-radius: 50%;
-  height: 100%;
-}
-
-
-.main-single-article p:nth-of-type(2){
-    color:#9d9797;
-    
-    
-}
-
-.main-single-article p:nth-of-type(3){
-    color:#9d9797;
-    
-    
-}
-
-
-
-.button-main-article{
-    background-color: #e9e2e2;
-    padding: 4px 10px;
-    border-radius: 15px;
-}
-
-
-
-.invisible{
-         opacity:0;
-    transition: 0.5s;
- }

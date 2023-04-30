@@ -15,10 +15,10 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// let m = document.querySelectorAll("g[stroke-linecap='butt']");
-// setInterval(() => {
-//   let random = Math.round(Math.random() * (m.length - 1));
-//   m[random].classList.toggle("invisible");
-// }, 10);
+let m = document.querySelectorAll("g[stroke-linecap='butt']");
+setInterval(() => {
+  let random = Math.round(Math.random() * (m.length - 1));
+  m[random].classList.toggle("invisible");
+}, 10);
 
 
