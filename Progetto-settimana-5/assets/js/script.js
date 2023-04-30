@@ -1,3 +1,5 @@
+//  CAMBIO COLORE NAV BAR E BOTTONE
+
 const change = 400;
 const startedButtonChange = document.getElementById("startedButton");
 const navChanges = document.getElementById("header");
@@ -14,6 +16,8 @@ window.addEventListener("scroll", () => {
     navChanges.classList.add("head-off");
   }
 });
+
+// ANIMAZIONE SVG M
 
 let m = document.querySelectorAll("g[stroke-linecap='butt']");
 setInterval(() => {

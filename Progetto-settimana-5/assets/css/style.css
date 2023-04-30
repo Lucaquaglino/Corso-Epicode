@@ -2,8 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Spectral&display=swap");
 
-/* font-family: 'Spectral', serif;  */
-
 html,
 body {
   margin: 0;
@@ -11,6 +9,8 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
+/* HEADER NAVBAR */
 
 .head {
   width: 100%;
@@ -38,6 +38,7 @@ nav ul {
   list-style-type: none;
   align-items: center;
 }
+
 nav ul li {
   padding: 0 1em;
 }
@@ -58,6 +59,52 @@ a {
   border: 0;
 }
 
+/* DOM MANIPULATION JS */
+
+.green-button {
+  background-color: #18b113;
+  color: white;
+  border-radius: 25px;
+  padding: 8px 1em;
+  border: 0;
+  transition: all 500ms linear;
+}
+
+.green-button-off {
+  background-color: #191919;
+  color: white;
+  border-radius: 25px;
+  padding: 8px 1em;
+  border: 0;
+  transition: all 500ms linear;
+}
+
+.navChange {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: solid 1px #191919;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  padding: 0.4em 0;
+  transition: all 500ms linear;
+}
+
+.head-off {
+  width: 100%;
+  background-color: #ffc017;
+  border-bottom: solid 1px #191919;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  padding: 0.4em 0;
+  transition: all 500ms linear;
+}
+
+/* BLOCCO CON H1 */
+
 #blocco {
   display: flex;
   justify-content: flex-end;
@@ -66,7 +113,6 @@ a {
   padding-top: 5em;
   padding-left: 0;
   padding-right: 0;
-
 }
 
 .primoBlocco {
@@ -75,9 +121,8 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  
-
- 
+  position: relative;
+  padding: 5em;
 }
 
 .primoBlocco-button {
@@ -106,46 +151,13 @@ h2 {
   white-space: nowrap;
 }
 
-/* DOM MANIPULATION JS */
+#M {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 
-.green-button {
-  background-color: #18b113;
-  color: white;
-  border-radius: 25px;
-  padding: 8px 1em;
-  border: 0;
-  transition: all 500ms linear;
-}
-.green-button-off {
-  background-color: #191919;
-  color: white;
-  border-radius: 25px;
-  padding: 8px 1em;
-  border: 0;
-  transition: all 500ms linear;
-}
-.navChange {
-  width: 100%;
-  background-color: #ffffff;
-  border-bottom: solid 1px #191919;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  padding: 0.4em 0;
-  transition: all 500ms linear;
-}
-.head-off {
-  width: 100%;
-  background-color: #ffc017;
-  border-bottom: solid 1px #191919;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  padding: 0.4em 0;
-  transition: all 500ms linear;
-}
+/* TREND ARTICOLI */
 
 .trend {
   display: flex;
@@ -194,7 +206,8 @@ h2 {
   align-items: center;
   font-size: 0.9em;
 }
-.article-author p{
+
+.article-author p {
   margin: 6px;
 }
 
@@ -206,8 +219,8 @@ h2 {
 
 #img1 {
   border-radius: 40%;
- width: 1.5em;
- height: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .article-content p:nth-child(3) {
@@ -216,9 +229,11 @@ h2 {
   align-items: center;
   gap: 0.2em;
 }
-.article-content p{
+
+.article-content p {
   margin: 6px;
 }
+
 /* MAIN ARTICOLI */
 
 main {
@@ -226,6 +241,7 @@ main {
   justify-content: center;
   width: 100%;
 }
+
 #main-container {
   display: flex;
   width: 87%;
@@ -234,17 +250,14 @@ main {
   align-items: start;
 }
 
-#section-article {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1600px;
-}
+
 
 .autore-article {
   display: flex;
   align-items: center;
 }
-.autore-article p{
+
+.autore-article p {
   margin: 9px 0;
 }
 
@@ -253,15 +266,19 @@ main {
   width: 1.5em;
   height: 1.5em;
 }
+
 .article-n {
   display: flex;
   justify-content: space-between;
   align-items: start;
   margin-bottom: 2em;
+  gap: 4em;
 }
+
 .article-senzaImg {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .copertina-articolo img {
@@ -274,10 +291,11 @@ main {
   display: flex;
   flex-direction: column;
 }
-#title-text-article{
+
+#title-text-article {
   color: #191919;
   font-size: 1.2em;
-  font-weight:800;
+  font-weight: 800;
 }
 
 .contenuto-article p {
@@ -285,7 +303,7 @@ main {
   color: #9a9797;
 }
 
-.title-text-article{
+.title-text-article {
   color: #191919;
 }
 
@@ -293,9 +311,7 @@ main {
   display: flex;
   justify-content: space-between;
   position: relative;
-  
 }
-
 
 .bookmarks {
   display: flex;
@@ -308,39 +324,48 @@ main {
 .date-article p {
   margin: 9px 0;
 }
-.span-categoria{
-border-radius: 30px;
-background-color: #eaeaea;
-padding: 3px 7px;
+
+.span-categoria button {
+  border-radius: 30px;
+  background-color: #eaeaea;
+  padding: 3px 7px;
+  border: none;
+  color: #9a9797;
 }
 
+/* ASIDE LINK E FOOTER  */
 
 #main-sticky {
-  position: relative;
- 
-}
-
-#aside-sticky {
   position: sticky;
-  top: 170px;
+  top: 130px;
+  width: 45%;
 }
 
 .aside-container {
   margin-bottom: 2em;
   border-bottom: 1px solid #c2c2c2;
 }
+
+.aside-container h5 {
+  margin-top: 0;
+}
+
 .aside-tags {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 2em;
 }
-.aside-tags a {
-  color: #9a9797;
+
+.aside-tags button {
+  background-color: #ffffff;
   border: 1px solid #c2c2c2;
   border-radius: 2px;
-  padding: 4px 8px;
-  margin: 10px;
+  padding: 7px 12px;
+  margin: 6px;
   margin-left: 0;
+}
+.aside-tags a {
+  color: #9a9797;
 }
 
 #footer-container a {
@@ -349,10 +374,87 @@ padding: 3px 7px;
   color: #9a9797;
   margin-left: 0;
 }
+
 /* CLASSE per JS ANIMAZIONE M */
+
 .invisible {
   opacity: 0;
-  transition: 0.5s;
+  transition: 400ms;
 }
 
+@media screen and (max-width: 1099px) {
+  #main-container {
+    gap: 1em;
+  }
 
+  #main-sticky {
+    position: sticky;
+    top: 130px;
+    width: 50%;
+  }
+
+  .single-article {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1008px) {
+  #main-container {
+    flex-direction: column-reverse;
+  }
+
+  #main-sticky {
+    position: static;
+    width: 90%;
+  }
+
+  #M {
+    position: absolute;
+    right: -200px;
+    bottom: 0;
+  }
+
+  #footer-container {
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 737px) {
+  #M {
+    display: none;
+  }
+
+  #headerContainer li:nth-child(1) {
+    display: none;
+  }
+  #headerContainer li:nth-child(2) {
+    display: none;
+  }
+  #headerContainer li:nth-child(3) {
+    display: none;
+  }
+
+  .primoBlocco-text {
+    font-size: 0.6em;
+  }
+
+  .single-article {
+    width: 100%;
+  }
+
+  .article-n {
+    font-size: 0.6em;
+  }
+  .copertina-articolo img {
+    width: 100px;
+    height: 78px;
+    margin-left: 4px;
+  }
+}
+#main-sticky {
+  
+  font-size: 0.7em;
+}
+
+.aside-tags button{
+  font-size: 0.8em;
+}
