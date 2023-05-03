@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAV BAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <img
+          src="https://s3u.tmimgcdn.com/u37752224/9c50f4d0965cb8b047a25f7a54b3c03e.gif"
+          alt=""
+          class="navbar-brand"
+          width="70px"
+          height="70px"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#saldi">Saldi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#welcome">Welcome</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lastMinute">Last minute</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recensioni">Recensioni</a>
+            </li>
+          </ul>
+          <form class="d-flex ml-auto">
+            <input
+              class="form-control form-control-sm me-2"
+              type="search"
+              placeholder="Cerca"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success btn-sm" type="submit">
+              Cerca
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <!-- PRIMA SECTION CON TITOLO -->
+
+      <section class="intro-section bg-light my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6">
+              <h1 class="intro-heading pt-4 pb-0 my-2">
+                Eveline-R <span>-feel the freedom</span>
+              </h1>
+            </div>
+            <div>
+              <hr class="my-3" />
+            </div>
+            <p class="intro-description my-2">
+              <i> Scopri le destinazioni più calde del momento!</i>
+            </p>
+            <div class="col-auto">
+              <button class="btn btn-primary btn- my-3">Prenota ora</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION SALDI  -->
+
+      <section class="my-5">
+        <div class="d-flex flex-row justify-content-between my-3">
+          <div class="col-xl-1">
+            <h2 id="saldi">Saldi</h2>
+          </div>
+          <div class="col-xl-1">
+            <a
+              class="text-decoration-none"
+              data-bs-toggle="collapse"
+              href="#ciao"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+              >Nascondi</a
+            >
+          </div>
+        </div>
+
+        <div class="row row-cols-xl-4" id="ciao">
+          <div class="col">
+            <div class="card border border-info">
+              <img
+                src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+                class="card-img-top img-thumbnail p-0"
+                alt="Immagine 1"
+              />
+              <div class="card-body flex-column">
+                <h5 class="card-title">Titolo 1</h5>
+                <p class="card-text">Testo della card 1</p>
+                <a href="#" class="btn btn-primary">Prenota ora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border border-info">
+              <img
+                src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+                class="card-img-top img-thumbnail p-0"
+                alt="Immagine 2"
+              />
+              <div class="card-body flex-column">
+                <h5 class="card-title">Titolo 2</h5>
+                <p class="card-text">Testo della card 2</p>
+                <a href="#" class="btn btn-primary">Prenota ora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border border-info">
+              <img
+                src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+                class="card-img-top img-thumbnail p-0"
+                alt="Immagine 3"
+              />
+              <div class="card-body flex-column">
+                <h5 class="card-title">Titolo 3</h5>
+                <p class="card-text">Testo della card 3</p>
+                <a href="#" class="btn btn-primary">Prenota ora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border border-info">
+              <img
+                src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+                class="card-img-top img-thumbnail p-0"
+                alt="Immagine 4"
+              />
+              <div class="card-body flex-column">
+                <h5 class="card-title">Titolo 4</h5>
+                <p class="card-text">Testo della card 4</p>
+                <a href="#" class="btn btn-primary">Prenota ora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION WELCOME SUMMER -->
+
+      <section class="my-5">
+        <div class="d-flex flex-row justify-content-between">
+          <div class="col-xl-1 text-nowrap">
+            <h2 id="welcome">Welcome Summer</h2>
+          </div>
+          <div class="col-xl-1">
+            <a
+              class="text-decoration-none"
+              data-bs-toggle="collapse"
+              href="#ciao"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+              >Nascondi</a
+            >
+          </div>
+        </div>
+
+        <div class="row row-cols-xl-3" id="ciao">
+          <div class="col">
+            <div class="card cardhot my-4">
+              <div class="card-body flex-column p-0">
+                <img
+                  src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+                  class="card-img-top img-thumbnail p-0"
+                  alt="Immagine 1"
+                />
+                <h5 class="card-title">Titolo 1</h5>
+                <p class="card-text">Testo della card 1</p>
+                <a href="#" class="btn btn-primary">Prenota ora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card cardhot my-4">
+              <div class="card-body flex-column p-0">
+                <img
+                  src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+                  class="card-img-top img-thumbnail p-0"
+                  alt="Immagine 1"
+                />
+                <h5 class="card-title">Titolo 1</h5>
+                <p class="card-text">Testo della card 1</p>
+                <a href="#" class="btn btn-primary">Prenota ora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card cardhot my-4">
+              <div class="card-body flex-column p-0">
+                <img
+                  src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+                  class="card-img-top img-thumbnail p-0"
+                  alt="Immagine 1"
+                />
+                <h5 class="card-title">Titolo 1</h5>
+                <p class="card-text">Testo della card 1</p>
+                <a href="#" class="btn btn-primary">Prenota ora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card cardhot my-4">
+              <div class="card-body flex-column p-0">
+                <img
+                  src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+                  class="card-img-top img-thumbnail p-0"
+                  alt="Immagine 1"
+                />
+                <h5 class="card-title">Titolo 1</h5>
+                <p class="card-text">Testo della card 1</p>
+                <a href="#" class="btn btn-primary">Prenota ora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card cardhot my-4">
+              <div class="card-body flex-column p-0">
+                <img
+                  src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+                  class="card-img-top img-thumbnail p-0"
+                  alt="Immagine 1"
+                />
+                <h5 class="card-title">Titolo 1</h5>
+                <p class="card-text">Testo della card 1</p>
+                <a href="#" class="btn btn-primary">Prenota ora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card cardhot my-4">
+              <div class="card-body flex-column p-0">
+                <img
+                  src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+                  class="card-img-top img-thumbnail p-0"
+                  alt="Immagine 1"
+                />
+                <h5 class="card-title">Titolo 1</h5>
+                <p class="card-text">Testo della card 1</p>
+                <a href="#" class="btn btn-primary">Prenota ora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION OFFERTA DEL GIORNO -->
+      <section class="my-5">
+        <div class="card mb-3" ">
+        <div class="row g-0">
+          <div class="col-xl-8 col-md-6">
+            <img
+              src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+              class="card-img-top img-fluid rounded-start p-0"
+              alt="Immagine 4"
+            />
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  >Last updated 3 mins ago</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION LAST MINUTE  -->
+
+      <section>
+        <div class="d-flex flex-row justify-content-between">
+          <div class="col-xl-1 my-2">
+            <h2 class="text-nowrap" id="lastMinute">Last Minute</h2>
+          </div>
+          <div class="col-xl-1">
+            <a
+              class="text-decoration-none"
+              data-bs-toggle="collapse"
+              href="#ciao"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+              >Nascondi</a
+            >
+          </div>
+        </div>
+
+        <div class="row row-cols-xl-6" id="ciao">
+          <div class="col">
+            <img
+              src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+              class="card-img-top img-thumbnail p-0"
+              alt="Immagine 1"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+              class="card-img-top img-thumbnail p-0"
+              alt="Immagine 2"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+              class="card-img-top img-thumbnail p-0"
+              alt="Immagine 1"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+              class="card-img-top img-thumbnail p-0"
+              alt="Immagine 1"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+              class="card-img-top img-thumbnail p-0"
+              alt="Immagine 1"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="https://media.hrs.com/media/image/ab/5b/4f/Komandoo_Maldive_Island_Resort-Inselstaat_-_Malediven-Aussenansicht-1-154616.jpg"
+              class="card-img-top img-thumbnail p-0"
+              alt="Immagine 1"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- RECENSIONI -->
+      <section class="py-5">
+        <h2 class="text-center mb-5" id="recensioni">Dicono di noi</h2>
+        <div class="row">
+          <div class="col-12 my-3">
+            <div class="row">
+              <div class="col-1 mx-auto">
+                <img
+                  src="https://www.eletrik.it/sites/default/files/user.png"
+                  alt=""
+                  width="50px"
+                  height="50px"
+                />
+              </div>
+              <div class="col-11 mx-auto">
+                <p class="card-title">Recensione 1</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                  eros eget lorem commodo lobortis ut sed arcu. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Ab iste atque,
+                  consequuntur quisquam id illo voluptates vitae voluptatibus,
+                  libero qui magnam dignissimos tempore? Minus veritatis
+                  doloribus recusandae quasi ducimus officia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 my-3">
+            <div class="row">
+              <div class="col-1 mx-auto">
+                <img
+                  src="https://www.eletrik.it/sites/default/files/user.png"
+                  alt=""
+                  width="50px"
+                  height="50px"
+                />
+              </div>
+              <div class="col-11 mx-auto">
+                <p class="card-title">Recensione 2</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                  eros eget lorem commodo lobortis ut sed arcu. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Rem, unde ipsam
+                  laborum dolorum consequuntur minus corporis, aliquam sapiente
+                  sed, aut consectetur ea deserunt. Minima quibusdam velit
+                  aliquid dicta magni unde. Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Voluptatum eaque earum excepturi
+                  corporis autem sunt, consequuntur alias iusto ullam quidem
+                  dignissimos velit praesentium aperiam quam magni, deleniti,
+                  incidunt maiores? Beatae?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 my-3">
+            <div class="row">
+              <div class="col-1 mx-auto">
+                <img
+                  src="https://www.eletrik.it/sites/default/files/user.png"
+                  alt=""
+                  width="50px"
+                  height="50px"
+                />
+              </div>
+              <div class="col-11 mx-auto">
+                <p class="card-title">Recensione 3</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                  eros eget lorem commodo lobortis ut sed arcu. Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit. Cumque
+                  voluptates laboriosam repellat ut vel? Eos nulla ullam, autem
+                  porro hic quidem labore odit praesentium. Culpa ad quaerat
+                  asperiores ipsa fugit. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Enim nihil inventore debitis possimus
+                  cumque, quasi vitae sit earum, a amet tenetur iusto
+                  necessitatibus error aliquid quod eos soluta. Molestiae, quia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="bg-dark text-light py-3">
+      <div class="row">
+        <div class="col-12 text-center p-4">
+          <button class="btn btn-primary">Contattaci</button>
+        </div>
+        <div class="col-12 text-center p-2">
+          <p class="m-0">
+            Copyright © 2023
+            <a href="#" class="text-light">La tua azienda</a>
+            - Tutti i diritti riservati.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function addHotBadgeToCards() {
+        const cards = document.querySelectorAll(".cardhot");
+
+        cards.forEach((card) => {
+          const badge = document.createElement("span");
+          badge.classList.add(
+            "badge",
+            "bg-danger",
+            "text-white",
+            "position-absolute",
+            "top-0",
+            "end-0",
+            "m-2"
+          );
+          badge.textContent = "HOT";
+
+          const cardBody = card.querySelector(".card-body");
+          cardBody.classList.add("position-relative");
+          cardBody.appendChild(badge);
+        });
+      }
+      addHotBadgeToCards();
+    </script>
+  </body>
+</html>
