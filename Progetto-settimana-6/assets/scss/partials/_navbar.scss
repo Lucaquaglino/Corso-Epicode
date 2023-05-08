@@ -1,0 +1,54 @@
+$colorViolet: #714cfd;
+
+#navbar-bell {
+  width: 60px;
+  height: 60px;
+}
+
+#nav-avatar {
+  left: 60px;
+  top: 30px;
+}
+
+.navbar-toggler {
+  color: $colorViolet;
+  border: 1px solid $colorViolet;
+}
+
+#navbar-bell {
+  span {
+    right: -8px;
+    bottom: 35px;
+
+    background-color: #714cfd;
+  }
+}
+
+.dropdown {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+#span-logout {
+  position: absolute;
+  top: 50px;
+  left: 60px;
+}
+
+@media screen and (max-width: 992px) {
+    nav {
+      position: relative;
+    }
+    #icone-nav {
+      position: absolute;
+      top: 12px;
+      right: 60px;
+    }
+  }

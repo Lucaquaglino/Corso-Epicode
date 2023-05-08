@@ -1,0 +1,46 @@
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card-testo {
+  span {
+    margin: 0 10px;
+  }
+}
+
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card {
+  &:hover {
+    box-shadow: 5px 10px 15px 3px rgb(154, 154, 154);
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .card {
+    font-size: 80%;
+  }
+  .card-testo {
+    svg {
+      width: 10px;
+    }
+  }
+}

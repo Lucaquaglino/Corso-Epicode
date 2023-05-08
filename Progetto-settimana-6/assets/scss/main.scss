@@ -1,0 +1,27 @@
+@import "./partials/navbar";
+@import "./partials/_hero.scss";
+@import "./partials/card";
+
+@font-face {
+  font-family: "feather";
+  src: url(../fonts/feather.ttf);
+}
+
+html,
+body {
+  font-family: "feather", sans-serif;
+}
+
+.icon-main {
+  width: 60px;
+  height: 60px;
+}
+
+#footer-link {
+  li {
+    border: 0;
+    a {
+      text-decoration: none;
+    }
+  }
+}

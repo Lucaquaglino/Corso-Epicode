@@ -1,0 +1,36 @@
+$colorViolet: #714cfd;
+
+#hero-section {
+  background-color: $colorViolet;
+  padding: 0 2em;
+
+  div {
+    button {
+      padding: 1em;
+    }
+  }
+}
+
+.hero-bg {
+  background-color: #feedd9;
+}
+
+.hero-icons {
+  color: #d8a56a;
+}
+
+#hero-text {
+  color: white;
+}
+
+#h1 {
+  font-weight: 900;
+}
+
+.btn_browse {
+  background-color: #1acb98;
+  color: white;
+  &:hover {
+    background-color: #15af83;
+  }
+}
