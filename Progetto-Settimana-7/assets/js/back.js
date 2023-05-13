@@ -20,16 +20,14 @@ document.getElementById("deleteButton").style.display = "none";
 // prendo l id del prodotto tramite il tasto modifica in homepage.html
 const parametri = new URLSearchParams(location.search);
 const objectId = parametri.get('id');
-console.log(objectId)
 
 
 
+// if else sul form per fare una modifica( PUT ), una aggiunta ( POST ) di un prodotto, una cancellazione(DELETE) di un prodotto e per popolare (GET) e svuotare il form 
 
-
-// if else per modificare il form per fare una modifica( PUT ) o una aggiunta ( POST ) di un prodotto
 
 if (objectId) {
-
+  console.log(objectId)
     // nascondo / mostro i bottoni
     document.getElementById("modifica").style.display = "block";
     document.getElementById("invia").style.display = "none";
@@ -59,7 +57,7 @@ if (objectId) {
         })
         .then(response => {
           if (response.ok) {
-            window.history.back();
+            window.location.href = "homepage.html";
             console.log('Prodotto eliminato con successo');
            
           } else {
@@ -108,6 +106,22 @@ if (objectId) {
    document.getElementById("modifica").addEventListener("click", function(event) {
     event.preventDefault(); 
 
+    //validazione riempimento campi del form
+    var inputs = document.querySelectorAll("#myForm input, #myForm textarea, #myForm select");
+    var isFormValid = true;
+  
+    for (var i = 0; i < inputs.length; i++) {
+      var input = inputs[i];
+      if (!input.value) {
+        isFormValid = false;
+        break;
+      }
+    }
+  
+    if (!isFormValid) {
+      alert("Completa tutti i campi del modulo!");
+    } else {
+      
     //confermo fi voler modificare il prodotto
 
 var conferma = confirm("Sei sicuro di voler modificare il prodotto?");
@@ -138,17 +152,18 @@ var conferma = confirm("Sei sicuro di voler modificare il prodotto?");
   })
   .then(response => {
     if (response.ok) {
-      window.history.back();
-      console.log('Prodotto eliminato con successo');
+      window.location.href = "homepage.html";
+      console.log('Prodotto modificato con successo');
      
     } else {
-      console.error('Si è verificato un errore durante l\'eliminazione del prodotto');
+      console.error('Si è verificato un errore durante la modifica del prodotto');
     }
   })
   .catch(error => {
     console.error('Si è verificato un errore durante la modifica del valore:', error);
   
   });
+}
       };
 })
 } else {
@@ -157,7 +172,24 @@ var conferma = confirm("Sei sicuro di voler modificare il prodotto?");
 
     document.getElementById("invia").addEventListener("click", function(event) {
         event.preventDefault(); 
+
+         //validazione riempimento campi del form
+        var inputs = document.querySelectorAll("#myForm input, #myForm textarea, #myForm select");
+        var isFormValid = true;
       
+        for (var i = 0; i < inputs.length; i++) {
+          var input = inputs[i];
+          if (!input.value) {
+            isFormValid = false;
+            break;
+          }
+        }
+      
+        if (!isFormValid) {
+          alert("Completa tutti i campi del modulo!");
+        } else {
+        
+        
         const name = document.getElementById("name").value;
         const description = document.getElementById("description").value;
         const brand = document.getElementById("brand").value;
@@ -197,7 +229,7 @@ var conferma = confirm("Sei sicuro di voler modificare il prodotto?");
           console.error('Si è verificato un errore durante il caricamento del prodotto:', error);
        
         });
-    
+      }
     }); 
 
 
