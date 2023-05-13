@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .jumbotron {
+      padding-top: 3rem;
+
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+      .jumbotron {
+        padding-top: 6rem;
+    
+      }
+    }
+
+    .jumbotron p:last-child {
+      margin-bottom: 0;
+    }
+
+    .jumbotron-heading {
+      font-weight: 300;
+    }
+
+    .jumbotron .container {
+      max-width: 40rem;
+    }
+
+    footer {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    footer p {
+      margin-bottom: 0.25rem;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .imgCrudazon {
+      width: 30px;
+      height: 30px;
+    }
+    @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+    html,
+    body {
+      font-family: "Oxygen", sans-serif;
+    }
+  </style>
+  <body class="bg-light">
+    <header>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container-fluid d-flex justify-content-between">
+          <a
+            href="homepage.html"
+            class="navbar-brand d-flex align-items-center"
+          >
+            <img
+              src="assets/imgs/crudazon.svg"
+              alt=""
+              class="imgCrudazon m-2"
+            />
+            <strong>CRUDAZON</strong>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Gestore Prodotti</h1>
+        <div
+          id="successAlert"
+          class="alert alert-success"
+          role="alert"
+          style="display: none"
+        ></div>
+        <div
+          id="errorAlert"
+          class="alert alert-success bg-danger text-white"
+          role="alert"
+          style="display: none"
+        ></div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-sm-6">
+          <form class="" id="myForm">
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Nome:</label>
+              <input type="text" class="form-control" id="name" />
+              <small class="form-text text-muted"
+                >Inserisci il nome del Prodotto.</small
+              >
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Descrizione:</label
+              >
+              <textarea class="form-control resizable-input" id="description"></textarea>
+
+              <small class="form-text text-muted"
+                >Inserisci una descrizione dell' oggetto.</small
+              >
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Brand:</label
+              >
+              <input type="text" class="form-control" id="brand" />
+              <small class="form-text text-muted"
+                >Inserisci il Brand del Prodotto.</small
+              >
+            </div>
+            <div class="mb-3">
+              <label for="image-url" class="form-label"
+                >URL dell'immagine:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="imageUrl"
+                pattern="https?://.*\.(png|jpg|jpeg|gif|svg)"
+              />
+              <small class="form-text text-muted"
+                >Inserisci un URL valido per un'immagine (PNG, JPG, JPEG, GIF,
+                SVG).</small
+              >
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Prezzo:</label
+              >
+              <input type="text" class="form-control" id="price" />
+              <small class="form-text text-muted"
+                >Inserisci il prezzo del prodotto (valore numerico).</small
+              >
+            </div>
+            <div class="row d-flex justify-content-between">
+              <button
+                type="submit"
+                class="btn  col-sm-3 btn-success"
+                id="invia"
+                href="homepage.html"
+              >
+                <i class="fa-solid fa-plus m-2" style="color: #feffff"></i>Crea
+              </button>
+              <button
+                type="submit"
+                class="btn  col-sm-3 btn-success"
+                id="modifica"
+              >
+                <i
+                  class="fa-solid fa-arrow-right-arrow-left m-2"
+                  style="color: #feffff"
+                ></i
+                >Modifica
+              </button>
+              <button
+                type="reset"
+                class="btn  col-sm-3 btn-warning text-black"
+                id="resetButton"
+              >
+                <i class="fa-solid fa-arrows-spin" style="color: #000000"></i>
+                Reset
+              </button>
+              <button
+                class="btn  col-sm-3 btn-danger text-black "
+                type="button"
+                id="deleteButton"
+              >
+                <i
+                  class="fa-regular fa-trash-can m-2"
+                  style="color: #000000"
+                ></i
+                >Elimina
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/902ca42911.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/back.js"></script>
+  </body>
+</html>
