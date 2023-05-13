@@ -5,7 +5,7 @@ spinner.style.display="block";
 fetch('https://striveschool-api.herokuapp.com/api/product/', {
   method: 'GET',
   headers: {
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVlMDY5OTg4Zjc0MDAwMTQyODc0OTAiLCJpYXQiOjE2ODM4ODM2NzMsImV4cCI6MTY4NTA5MzI3M30.WmQUGhxMHwybBN2jxdnyYNrZfC9sV3EJgt3FHYtvQqY",
+    "Authorization": "Bearer eyJhbGHYtvQqY",
 
   'Content-Type': 'application/json',
 
