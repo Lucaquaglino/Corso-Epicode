@@ -62,17 +62,20 @@ if (objectId) {
       })
         .then((response) => {
           if (response.ok) {
+            // pop-up modali
             document.getElementById("modal-title-add").style.display = "none";
             document.getElementById("add-modal").style.display = "none";
             document.getElementById("modal-title-del").style.display = "block";
             document.getElementById("del-modal").style.display = "block";
-
             $("#modalOk").modal("show");
             setTimeout(function () {
               window.location.href = "homepage.html";
             }, 2000);
             console.log("Prodotto eliminato con successo");
-          } else {
+          }
+           else
+            {
+              // pop-up modali
             document.getElementById("modal-title-add-error").style.display =
               "none";
             document.getElementById("add-modal-error").style.display = "none";
@@ -86,6 +89,7 @@ if (objectId) {
           }
         })
         .catch((error) => {
+          // pop-up modali
           document.getElementById("modal-title-add-error").style.display =
             "none";
           document.getElementById("add-modal-error").style.display = "none";
@@ -184,6 +188,7 @@ if (objectId) {
           )
             .then((response) => {
               if (response.ok) {
+                // pop-up modali
                 document.getElementById("mod-modal").style.display = "block";
                 document.getElementById("modal-title-mod").style.display =
                   "block";
@@ -195,11 +200,12 @@ if (objectId) {
                   window.location.href = "homepage.html";
                 }, 2000);
                 console.log("Prodotto modificato con successo");
-                console.log(price)
+                console.log(price);
               } else {
                 console.error(
                   "Si è verificato un errore durante la modifica del prodotto"
                 );
+                // pop-up modali
                 document.getElementById("mod-modal-error").style.display =
                   "block";
                 document.getElementById("modal-title-mod-error").style.display =
@@ -216,6 +222,7 @@ if (objectId) {
                 "Si è verificato un errore durante la modifica del valore:",
                 error
               );
+              // pop-up modali
               document.getElementById("mod-modal").style.display = "block";
               document.getElementById("modal-title-mod").style.display =
                 "block";
@@ -228,6 +235,8 @@ if (objectId) {
       }
     });
 } else {
+
+
   // creo oggetto e lo carico sull API con una richiesta POST
 
   document.getElementById("invia").addEventListener("click", function (event) {
@@ -249,7 +258,9 @@ if (objectId) {
 
     if (!isFormValid) {
       alert("Completa tutti i campi del modulo!");
-    } else {
+    }
+     else
+      {
       const name = document.getElementById("name").value;
       const description = document.getElementById("description").value;
       const brand = document.getElementById("brand").value;
@@ -275,12 +286,14 @@ if (objectId) {
       })
         .then(function (response) {
           if (response.ok) {
+            // pop-up modali
             $("#modalOk").modal("show");
             setTimeout(function () {
               window.location.href = "homepage.html";
             }, 2000);
           } else {
             console.error("Errore durante la richiesta POST:", response.status);
+            // pop-up modali
             $("#modalError").modal("show");
           }
         })
@@ -289,6 +302,7 @@ if (objectId) {
             "Si è verificato un errore durante il caricamento del prodotto:",
             error
           );
+          // pop-up modali
           $("#modalError").modal("show");
         });
     }

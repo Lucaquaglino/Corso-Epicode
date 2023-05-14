@@ -6,13 +6,12 @@ window.onload = () => {
   // LOADING BAR
   let spinner = document.getElementById("spinner");
   spinner.style.display = "block";
-
+// Carico a schermo tutti i prodotti dell API con GET 
   fetch("https://striveschool-api.herokuapp.com/api/product/", {
     method: "GET",
     headers: {
       Authorization: chiave,
-
-      "Content-Type": "application/json",
+     "Content-Type": "application/json",
     },
   })
     .then((response) => response.json())
@@ -22,6 +21,7 @@ window.onload = () => {
     })
     .then((data) => {
       console.log("Oggetti ottenuti con successo:", data);
+      // creo le card
       let card = "";
       data.forEach((prodotti) => {
         card += `
@@ -71,7 +71,7 @@ window.onload = () => {
       productList.innerHTML = card;
 
       spinner.style.display = "none";
-
+// MEME alert x Lidia
       let successAlert = document.getElementById("successAlert");
       successAlert.textContent = "NON SI E' ROTTO NULLA 😛!";
       successAlert.style.display = "block";
@@ -85,7 +85,7 @@ window.onload = () => {
         "Si è verificato un errore durante il recupero degli oggetti:",
         error
       );
-
+// MEME alert x Lidia
       let errorAlert = document.getElementById("errorAlert");
       errorAlert.textContent = "E' TUTTO ROTTO!!🤬: " + error.message;
       errorAlert.style.display = "block";

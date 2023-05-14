@@ -8,6 +8,7 @@ const objectId = parametri.get("id");
 console.log(objectId);
 
 if (objectId) {
+// Prendo prodotto con ID dell Api e lo inserisco a schermo tramite card
   fetch(`https://striveschool-api.herokuapp.com/api/product/${objectId}`, {
     method: "GET",
     headers: {
@@ -19,7 +20,7 @@ if (objectId) {
     .then((response) => response.json())
     .then((prodotti) => {
       console.log("Oggetti ottenuti con successo:", prodotti);
-
+// creo la card
       const card = `
             <div class="col-12">
             <div class="card mb-4 row">
