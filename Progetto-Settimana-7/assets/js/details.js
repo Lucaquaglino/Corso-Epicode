@@ -50,11 +50,7 @@ if (objectId) {
               ${prodotti.price} €
               </span>
               </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">   
                  </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

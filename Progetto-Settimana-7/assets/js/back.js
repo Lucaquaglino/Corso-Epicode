@@ -177,6 +177,7 @@ if (objectId) {
               method: "PUT",
               headers: {
                 Authorization: chiave,
+                "Content-Type": "application/json",
               },
               body: JSON.stringify(products),
             }
@@ -194,6 +195,7 @@ if (objectId) {
                   window.location.href = "homepage.html";
                 }, 2000);
                 console.log("Prodotto modificato con successo");
+                console.log(price)
               } else {
                 console.error(
                   "Si è verificato un errore durante la modifica del prodotto"
