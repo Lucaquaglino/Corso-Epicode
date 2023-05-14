@@ -66,11 +66,19 @@ window.onload = () => {
       </div>
         `;
         console.log(prodotti);
+        
       });
-
+     
       productList.innerHTML = card;
 
       spinner.style.display = "none";
+
+
+      // Numero dei prodotti caricati 
+      const numeroOggetti = data.length;
+      const conteggioProdotti = document.getElementById('conteggio');
+      conteggioProdotti.innerText = `Prodotti caricati: ${numeroOggetti}`;
+
 // MEME alert x Lidia
       let successAlert = document.getElementById("successAlert");
       successAlert.textContent = "NON SI E' ROTTO NULLA 😛!";
