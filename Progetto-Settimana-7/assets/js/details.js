@@ -51,6 +51,7 @@ if (objectId) {
               ${prodotti.price} €
               </span>
               </p>
+              <a href="homepage.html" class="text-primary">Indietro</a>
                  </div>
               </div>
             </div>

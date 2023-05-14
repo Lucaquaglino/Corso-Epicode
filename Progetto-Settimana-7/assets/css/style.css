@@ -3,7 +3,7 @@ html,
 body {
   font-family: "Oxygen", sans-serif;
 }
-/* svg logo */
+/* SVG LOGO */
 .imgCrudazon {
     width: 30px;
     height: 30px;
@@ -36,6 +36,9 @@ body {
   max-width: 40rem;
 }
 
+#productList{
+  width: auto;
+}
 
 /* FOOTER */
 
