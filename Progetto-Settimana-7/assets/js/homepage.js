@@ -1,4 +1,6 @@
 window.onload = () => {
+  //DISABILITO LA SELECT
+  document.getElementById("productDropdown").style.display = "none";
   // CHIAVE AUTHORIZATION
   let chiave =
     "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVlMDY5OTg4Zjc0MDAwMTQyODc0OTAiLCJpYXQiOjE2ODQwNTYyODQsImV4cCI6MTY4NTI2NTg4NH0.WqjgtYzMONCax5PTs_9Jru1hNo5G7Zj7pTtgCrNW7iA";
@@ -6,12 +8,12 @@ window.onload = () => {
   // LOADING BAR
   let spinner = document.getElementById("spinner");
   spinner.style.display = "block";
-// Carico a schermo tutti i prodotti dell API con GET 
+  // Carico a schermo tutti i prodotti dell API con GET
   fetch("https://striveschool-api.herokuapp.com/api/product/", {
     method: "GET",
     headers: {
       Authorization: chiave,
-     "Content-Type": "application/json",
+      "Content-Type": "application/json",
     },
   })
     .then((response) => response.json())
@@ -65,21 +67,43 @@ window.onload = () => {
         </div>
       </div>
         `;
+        productList.innerHTML = card;
         console.log(prodotti);
-        
-      });
-     
-      productList.innerHTML = card;
+        // select per scelta veloce INFO prodotti
+        var productDropdown = document.getElementById("productDropdown");
+        var option = document.createElement("option");
+        option.value = prodotti._id;
+        option.text = prodotti.name;
+        productDropdown.appendChild(option);
 
+        document.getElementById("productDropdown").style.display = "block";
+        // select che porta al prodotto selezionato
+        var cards = document.getElementsByClassName("card");
+        for (var i = 0; i < cards.length; i++) {
+          cards[i].setAttribute("id", data[i]._id);
+        }
+        var mySelect = document.getElementById("productDropdown");
+
+        mySelect.addEventListener("change", function () {
+          var selectedValue = mySelect.value;
+          scrollToElement(selectedValue);
+        });
+
+        function scrollToElement(id) {
+          var element = document.getElementById(id);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        }
+      });
       spinner.style.display = "none";
 
-
-      // Numero dei prodotti caricati 
+      // Numero dei prodotti caricati
       const numeroOggetti = data.length;
-      const conteggioProdotti = document.getElementById('conteggio');
+      const conteggioProdotti = document.getElementById("conteggio");
       conteggioProdotti.innerText = `Prodotti caricati: ${numeroOggetti}`;
 
-// MEME alert x Lidia
+      // MEME alert x Lidia
       let successAlert = document.getElementById("successAlert");
       successAlert.textContent = "NON SI E' ROTTO NULLA 😛!";
       successAlert.style.display = "block";
@@ -93,7 +117,7 @@ window.onload = () => {
         "Si è verificato un errore durante il recupero degli oggetti:",
         error
       );
-// MEME alert x Lidia
+      // MEME alert x Lidia
       let errorAlert = document.getElementById("errorAlert");
       errorAlert.textContent = "E' TUTTO ROTTO!!🤬: " + error.message;
       errorAlert.style.display = "block";

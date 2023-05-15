@@ -23,7 +23,7 @@
     <header>
       <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="container-fluid d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center">
+          <a href="homepage.html" class="navbar-brand d-flex align-items-center">
             <img
               src="assets/imgs/crudazon.svg"
               alt=""
@@ -48,7 +48,13 @@
             ></div>
           </div>
           <p id="conteggio"></p>
-          <a href="back.html" class="btn btn-primary my-5">
+          <!-- MENU' A TENDINA PER VISUALIZZARE LE INFO PRODOTTI -->
+          <select id="productDropdown" class="form-control form-control-sm mt-5" onchange="scrollToElement(this.value)" >
+            <option value="" >Scegli un prodotto</option>
+          </select>
+          <div id="productContainer">
+          </div>
+            <a href="back.html" class="btn btn-primary my-5">
             <i class="fa-solid fa-plus mx-2" style="color: #feffff"></i>Aggiungi
             prodotto</a
           >
