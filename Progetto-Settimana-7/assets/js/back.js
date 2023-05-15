@@ -289,7 +289,7 @@ if (objectId) {
             // pop-up modali
             $("#modalOk").modal("show");
             setTimeout(function () {
-              window.location.href = "homepage.html";
+              $("#modalOk").modal("hide");
             }, 2000);
           } else {
             console.error("Errore durante la richiesta POST:", response.status);
