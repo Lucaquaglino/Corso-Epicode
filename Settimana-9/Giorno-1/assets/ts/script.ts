@@ -1,3 +1,4 @@
+
 const numeroCasuale = (): number => {
   return Math.floor(Math.random() * 100 + 1);
 };
@@ -8,6 +9,13 @@ enum Numeri {
   numeroEstratto = numeroCasuale(),
 
 }
+
+
+let estratto=document.getElementById(
+  'dadoCasuale'
+) as HTMLInputElement;
+
+estratto.innerHTML = `Numero estratto: ${Numeri.numeroEstratto}`;
 
 
 

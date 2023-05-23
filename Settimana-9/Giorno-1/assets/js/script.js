@@ -7,6 +7,8 @@ var Numeri;
     Numeri[Numeri["giocatore2"] = numeroCasuale()] = "giocatore2";
     Numeri[Numeri["numeroEstratto"] = numeroCasuale()] = "numeroEstratto";
 })(Numeri || (Numeri = {}));
+var estratto = document.getElementById('dadoCasuale');
+estratto.innerHTML = "Numero estratto: ".concat(Numeri.numeroEstratto);
 var Gioco = function () {
     console.log("Giocatore uno: ".concat(Numeri.giocatore1));
     console.log("Giocatore due: ".concat(Numeri.giocatore2));
