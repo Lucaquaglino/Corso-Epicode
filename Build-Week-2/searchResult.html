@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homePage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/searchResult.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid row m-0 p-0 bg-black">
+
+      
+
+      <!-- Navbar (colonna 1) -->
+
+
+      <nav class="nav d-lg-flex flex-column col-2 d-none colore-sfondo">
+        <a class="nav-link active" aria-current="page" href="#"
+          ><i class="bi bi-three-dots p-1"></i
+        ></a>
+        <a class="nav-link" href="homePage.html"> <i class="bi bi-house-fill p-1"></i> Home</a>
+        <input class="w-75 mx-3 mb-3 bg-black text-white" type="text" placeholder="Cerca" id="searchInput">
+        <button class="btn btn-outline-success mx-3 w-75"  id="searchButton">Cerca</button>
+
+        <a class="nav-link" href="#">
+          <i class="bi bi-music-note-list p-1"></i> Link</a
+        >
+        <br>
+        <br>
+        <a class="nav-link" href="#">
+          <i class="bi bi-plus-lg p-1 icona-add"></i> Crea Playlist</a
+        >
+        <a class="nav-link" href="#">
+          <i class="bi bi-heart-fill p-1 icona-cuore"></i> Brani che ti piacciono</a
+        >
+        <a class="nav-link" href="#">
+          <i class="bi bi-bookmark-fill p-1 text-success icona-etichetta"></i> I tuoi episodi</a
+        >
+        <hr />
+        <div class="row" id="barra">
+        <!-- ARRAY PLAYLIST -->
+        <div class ="colore-sfondo ps-0" id="playlist"></div>
+      </div>
+      </nav>
+
+
+      <!-- Hero section (colonna 2) -->
+    
+      <section class="container-fluid m-0 col-lg-8 col-12 section-centrale colore-sfondo3">
+        <div class="barra2">
+   
+       
+        <!-- Album-section -->
+        <div class="d-flex justify-content-between">
+          <h2 class="m-3">BUONASERA</h2>
+        </div>
+        <div
+          id="album-container"
+          class="row d-flex justify-content-around"
+        ></div>
+      </div>
+      </section>
+
+      <!--Colonna amici (colonna 3) -->
+
+      <section class="col-2 d-lg-block d-none colore-sfondo">
+        <div class="d-flex justify-content-between mt-2">
+          <div>
+          <h6>ATTIVITA AMICI</h6>
+        </div>
+        <div>
+          <i class="bi bi-person-plus-fill"></i>
+          <i class="bi bi-x-lg"></i>
+        </div>
+        </div>
+        <div class="card card-body border-0 colore-sfondo">
+          <div class="d-flex">
+            <div>
+              <img class="rounded-circle" src="assets/imgs/search/image-24.jpg" height="40" alt="img-hero">
+            </div>
+            <div class="flex-column mx-3">
+            <h5>Charlie Hookham</h5>
+            <h6><small>Camera•Yumi Zouma</h6></small>
+            <h6><small><i class="bi bi-pause-circle"></i> EP III</h6></small>
+          </div>
+          </div>
+        </div>
+
+        <div class="card card-body border-0 colore-sfondo">
+          <div class="d-flex">
+            <div>
+              <img class="rounded-circle" src="assets/imgs/search/image-11.jpg" height="40" alt="img-hero">
+            </div>
+            <div class="flex-column mx-3">
+            <h5>lightdark02</h5>
+            <h6><small>Airmed to kill•jade LeMac</h6></small>
+            <h6><small><i class="bi bi-pause-circle"></i> Aimed to kill</h6></small>
+          </div>
+          </div>
+        </div>
+
+        <div class="card card-body border-0 colore-sfondo">
+          <div class="d-flex">
+            <div>
+              <img class="rounded-circle" src="assets/imgs/search/image-9.jpg" height="40" alt="img-hero">
+            </div>
+            <div class="flex-column mx-3">
+              <h5>Valeria Traverso</h5>
+              <h6><small>New Kings•Sleeping Wolf</h6></small>
+              <h6><small><i class="bi bi-music-note-beamed"></i> Twint Badass mood</h6></small>
+          </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+   
+
+   <!--FOOTER NAVBAR-->
+
+   <nav class="navbar fixed-bottom navbar-dark colore-sfondo2">
+    <div class="card card-body colore-sfondo2 col-4 d-none d-lg-block">
+      <div class="d-flex">
+        <div>
+          <img class="rounded-circle" src="assets/imgs/search/image-24.jpg" height="40" alt="img-hero">
+        </div>
+        <div class="flex-column mx-3">
+        <h5>Charlie Hookham</h5>
+        <h6><small>Camera•Yumi Zouma</h6></small>
+      </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center col-4">
+      <!-- PLAYER AUDIO -->
+      <audio id="music-player" controls>
+        <!-- Fallback content in caso di problemi con l'audio -->
+        Il tuo browser non supporta l'elemento audio.
+      </audio>
+    </div>
+    <div class="col-4 text-end d-none d-lg-block">
+      <a href=""><i class="bi bi-mic-fill text-white me-2"></i></a>
+      <a href=""><i class="bi bi-list text-white me-2"></i></a>
+      <a href=""><i class="bi bi-ui-radios text-white me-2"></i></a>
+      <a href=""><i class="bi bi-volume-up-fill text-white me-2"></i></a>
+      <a href=""><i class="bi bi-arrows-angle-expand text-white me-2"></i></a>
+    </div>
+
+    <!--NAVBAR NASCOSTA-->
+
+    <nav class="nav d-lg-flex d-lg-none w-100 justify-content-center colore-sfondo2">
+     <a class="nav-link text-white" href="#"><i class="bi bi-house-door-fill p-1 text-white"></i>Home</a>
+       <a class="nav-link text-white" href="#"> <i class="bi bi-search p-1 text-white"></i> cerca</a>
+      <br>
+      <br>
+      <a class="nav-link text-white" href="#"><i class="bi bi-plus-lg p-1 text-white"></i> Crea Playlist</a>
+    </nav>
+
+  </nav>
+    
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-cj1rJrslJP+TjsT/YMSnnV81+g9u4ULVjKbYHJzyVwOyIRxMzj2QflEBeLl84MiSPR5v5P5E5YKfx5ig3wq/Ew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="./assets/js/searchResult.js"></script>
+    
+  </body>
+</html>
