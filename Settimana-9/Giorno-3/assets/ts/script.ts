@@ -7,9 +7,9 @@ class Lavoratore {
     public tasseInps: number = 26.23;
     public tasseIrpef: number = 15;
   
-    constructor(codredd: number, redditoAnnuoLordo: number) {
-      this.codredd = codredd;
-      this.redditoAnnuoLordo = redditoAnnuoLordo;
+    constructor(_codredd: number, _redditoAnnuoLordo: number) {
+      this.codredd = _codredd;
+      this.redditoAnnuoLordo = _redditoAnnuoLordo;
     }
   
     getUtileTasse(): number {
