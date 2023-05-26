@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto settimanale 9</title>
+</head>
+<body>
+  <label for="users">Scegli l'utente:</label><br>
+  <select id="users" name="users">
+    <option value="1">First User</option>
+    <option value="2">Second User</option>
+    <option value="3">Third User</option>
+  </select>
+  <br>
+  <label for="ricarica">Ricarica:</label><br>
+  <input type="number" id="ricarica" name="ricarica"><br>
+  <button onclick="ricarica()">Ricarica</button>
+  <br>
+  <label for="chiamata">Minuti Chiamata:</label><br>
+  <input type="number" id="chiamata" name="chiamata"><br>
+  <button onclick="chiamata()">Effettua Chiamata</button>
+  <br>
+  <button onclick="checkUser()">Verifica Stato</button>
+  <br>
+  <button onclick="azzeraChiamate()">Azzera Chiamate</button>
+  <hr>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
