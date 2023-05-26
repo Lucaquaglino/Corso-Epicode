@@ -1,31 +1,133 @@
 <!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progetto settimanale 9</title>
-</head>
-<body>
-  <label for="users">Scegli l'utente:</label><br>
-  <select id="users" name="users">
-    <option value="1">First User</option>
-    <option value="2">Second User</option>
-    <option value="3">Third User</option>
-  </select>
-  <br>
-  <label for="ricarica">Ricarica:</label><br>
-  <input type="number" id="ricarica" name="ricarica"><br>
-  <button onclick="ricarica()">Ricarica</button>
-  <br>
-  <label for="chiamata">Minuti Chiamata:</label><br>
-  <input type="number" id="chiamata" name="chiamata"><br>
-  <button onclick="chiamata()">Effettua Chiamata</button>
-  <br>
-  <button onclick="checkUser()">Verifica Stato</button>
-  <br>
-  <button onclick="azzeraChiamate()">Azzera Chiamate</button>
-  <hr>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>DARIOPHONE</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://avatars.githubusercontent.com/u/64127976?v=4"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <style>
+      .card, #card{
+        border-radius: 10%;
+      }
+
+
+   
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+
+
+
+    </style>
+  </head>
+
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <div class="card mt-5 border-0">
+            <div class="card-body" style="background-color: black" id="card">
+              <h5 class="card-title text-center text-white">DARIOPHONE</h5>
+              <div class="card" style="width: 100%">
+                <img
+                  src="https://avatars.githubusercontent.com/u/64127976?v=4"
+                  class="card-img-top"
+                  alt="schermo"
+                />
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="users">Scegli l'utente:</label>
+                    <select class="form-control" id="users">
+                      <option value="1">Pippo</option>
+                      <option value="2">Pluto</option>
+                      <option value="3">Paperino</option>
+                    </select>
+                  </div>
+
+                  <p class="card-text" id="saldoResiduo"></p>
+                  <p class="card-text" id="numeroChiamate"></p>
+
+                  <p class="card-text" id="durataChiamata"></p>
+
+                  <p id="timerDisplay"></p>
+
+                  <input
+                    type="number"
+                    id="ricarica"
+                    name="ricarica"
+                    class="form-control"
+                    placeholder="Importo Ricarica"
+                  /><br />
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-block  rounded-pill"
+                    onclick="ricarica()"
+                  >
+                    Ricarica
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-block rounded-pill"
+                    onclick="checkUser()"
+                  >
+                    Verifica Stato
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-warning btn-block rounded-pill"
+                    onclick="azzeraChiamate()"
+                  >
+                    Azzera Chiamate
+                  </button>
+
+                  <div class="d-flex justify-content-between">
+                    <button
+                      type="button"
+                      class="btn btn-success rounded-pill"
+                      style="width: 70px; height: 70px"
+                      onclick="iniziaChiamata()"
+                    >
+                      <i class="bi bi-telephone-fill"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger rounded-pill"
+                      style="width: 70px; height: 70px"
+                      onclick="terminaChiamata()"
+                    >
+                      <i class="bi bi-telephone-x-fill"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
