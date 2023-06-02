@@ -34,16 +34,18 @@ section{
 }
 
 .nav-link{
-  animation: 3s ease-out 0s 1 slide2;
-}
-
-@keyframes slide2 {
-  0% {
-    transform: translateY(-1000px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  animation: 2s 1 bounce;
 }
 
 
+
+@keyframes bounce {
+  0% { transform: translateY(-90px); animation-timing-function: ease-in; }
+  38% { transform: translateY(0); animation-timing-function: ease-out; }
+  55% { transform: translateY(-70px); animation-timing-function: ease-in; }
+  72% { transform: translateY(0); animation-timing-function: ease-out; }
+  81% { transform: translateY(-50px); animation-timing-function: ease-in; }
+  90% { transform: translateY(0); animation-timing-function: ease-out; }
+  95% { transform: translateY(-20px); animation-timing-function: ease-in; }
+  100% { transform: translateY(0); }
+}
