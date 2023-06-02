@@ -10,15 +10,18 @@ import { TodosService } from 'src/app/services/todos.service';
 export class CompletatiComponent implements OnInit {
 
   taskCompletate: Todo[] = []; //array di task completate
-
+  messaggioRecuperoTask: boolean = false; // messaggio di ricerca task
   constructor(private taskService: TodosService) {}
 
 //metodo al caricamento della pagina
-  ngOnInit() {
-    setTimeout(() => {
-    this.taskCompletate = this.taskService.gettaskCompletate();
-  }, 2000);
-  }
+ //metodo al caricamento della pagina
+ ngOnInit() {
+  this.messaggioRecuperoTask=true//abilito messaggio di ricerca task
+  setTimeout(() => {
+    this.messaggioRecuperoTask=false//disabilito messaggio di ricerca task
+  this.taskCompletate = this.taskService.gettaskCompletate();
+}, 2000);
+}
 
 
   //metodo per cancellare le task completate

@@ -13,11 +13,14 @@ export class ToDoComponent implements OnInit {
   taskNuove: string = ''; //task aggiunte
   messaggioNoTask: boolean = false; //messaggio no task disabilitato
   aggiuntaTask: boolean = false; // messaggio di aggiunta task disabilitato
+  messaggioRecuperoTask: boolean = false; // messaggio di ricerca task
   constructor(private taskService: TodosService) {}
   //metodo al caricamento della pagina
   ngOnInit() {
+    this.messaggioRecuperoTask=true //abilito messaggio di ricerca task
     setTimeout(() => {
       this.tasks = this.taskService.getTasks();
+      this.messaggioRecuperoTask=false //disabilito messaggio di ricerca task
       this.messaggioNoTask = this.tasks.length === 0; //abilito messaggio no task se non ne trovo
     }, 2000);
   }
