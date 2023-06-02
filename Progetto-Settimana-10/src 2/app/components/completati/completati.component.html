@@ -1,0 +1,31 @@
+
+
+
+
+<form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
+  <div class="col-12">
+  </div>
+
+</form>
+
+<table class="table mb-4">
+  <thead>
+    <tr>
+      <th scope="col">No.</th>
+      <th scope="col">Task</th>
+      <th scope="col">Stato</th>
+      <th scope="col">Azioni</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let task of taskCompletate">
+      <th scope="row"> {{  task.id }}</th>
+      <td class=> <span class="testo-barrato">{{ task.title }}</span></td>
+      <td>Completata</td>
+      <td>
+        <button class="btn btn-danger mb-1 mx-1 rounded-pill" (click)="cancellaTask(task)"  data-toggle="tooltip" title="ELIMINA Task">  <i class="bi bi-trash px-2"></i> Elimina</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+

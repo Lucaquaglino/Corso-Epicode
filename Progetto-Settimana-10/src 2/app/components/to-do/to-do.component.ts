@@ -27,7 +27,7 @@ export class ToDoComponent implements OnInit {
     this.messaggioNoTask = false; //tolgo il messaggio quando aggiungo la task
     setTimeout(() => {
       const newTask: Todo = {//creo oggetto della nuova task
-        id:this.tasks.length+1, ///this.tasks.length+1 (metodo alternativo) Date.now()
+        id:this.tasks.length+1, // (metodo alternativo) Date.now()
         title: this.taskNuove,
 
       };
@@ -37,6 +37,7 @@ export class ToDoComponent implements OnInit {
       this.messaggioNoTask = false; // tolgo il messaggio no task quando aggiungo la task
       this.aggiuntaTask = false; // tolgo messaggio dell'aggiunta task quando l'aggiungo
     }, 2000);
+    console.log(this.taskNuove)
   }
   //metodo per spostare le task da un array all altro
   spostaCompletati(task: Todo) {

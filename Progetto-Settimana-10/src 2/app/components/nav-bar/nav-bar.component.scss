@@ -1,0 +1,49 @@
+a{
+  text-decoration: none;
+}
+
+h5:hover, h4:hover{
+  color: rgb(163, 163, 211);
+}
+
+.todos:focus {
+  color: rgb(8, 41, 250);
+}
+
+.completati:focus{
+  color: rgb(35, 176, 35);
+}
+section{
+  background-color: #eee;
+
+}
+
+.card{
+  background-color: rgb(182, 199, 252);
+  animation: 1s ease-out 0s 1 slide;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.nav-link{
+  animation: 3s ease-out 0s 1 slide2;
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+

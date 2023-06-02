@@ -1,0 +1,34 @@
+<section class="vh-100 " >
+  <div class="container py-5">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-lg-9 col-xl-7">
+        <div class="card rounded-3 ">
+          <div class="card-body p-4">
+            <h4 class="text-center pb-3">
+              <a href="" class="nav-link"> To Do App 📝</a>
+            </h4>
+            <div class="d-flex justify-content-center">
+              <h5 class="text-center m-3 pb-3">
+                <a
+                  class="todos nav-link text-center pb-3"
+                  [routerLink]="['/to-do']"
+                  routerLinkActive="active"
+                  >Todos ✏️</a
+                >
+              </h5>
+              <h5 class="text-center m-3 pb-3">
+                <a
+                  class="completati nav-link text-center pb-3"
+                  [routerLink]="['/completati']"
+                  routerLinkActive="active"
+                  >Completati ✅</a
+                >
+              </h5>
+            </div>
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

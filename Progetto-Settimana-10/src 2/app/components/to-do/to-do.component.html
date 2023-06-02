@@ -1,0 +1,36 @@
+
+<form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
+  <div class="col-12">
+    <div class="">
+      <input type="text" class="form-control" [(ngModel)]="taskNuove" [ngModelOptions]="{standalone: true}" placeholder="Aggiungi task" />
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary rounded-pill" (click)="addTask()"><i class="bi bi-plus-circle px-2"></i>Aggiungi</button>
+  </div>
+</form>
+
+<table class="table mb-4">
+  <thead>
+    <tr>
+      <th scope="col">No.</th>
+      <th scope="col">Task</th>
+      <th scope="col">Stato</th>
+      <th scope="col">Azioni</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let task of tasks">
+      <th scope="row"> {{  task.id }}</th>
+      <td> {{  task.title }}</td>
+      <td>Da Completare</td>
+      <td class="d-flex justify-content-evenly">
+        <button class="btn btn-success mb-1 mx-1 rounded-pill" (click)="spostaCompletati(task)" data-toggle="tooltip" title="Segna come completato"><i class="bi bi-check-lg  px-2"  ></i>Completato</button>
+        <button class="btn btn-danger mb-1 mx-1 rounded-pill" (click)="cancellaTask(task)"  data-toggle="tooltip" title="ELIMINA Task">  <i class="bi bi-trash px-2"></i>Elimina</button>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div class="alert alert-danger mb-1" *ngIf="messaggioNoTask">Ops... devi aggiungere una task!</div>
+<div class="alert alert-info mb-1" *ngIf="aggiuntaTask">Aggiunta in corso...</div>
