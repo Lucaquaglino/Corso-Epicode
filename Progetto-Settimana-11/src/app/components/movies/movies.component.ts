@@ -5,7 +5,6 @@ import { Favorites } from 'src/app/models/favorites.interface';
 import { AuthService } from 'src/app/auth/auth.service';
 import { Howl } from 'howler';
 
-
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
@@ -15,8 +14,8 @@ export class MoviesComponent implements OnInit {
   movies: Movies[] | undefined;
   favorites: Favorites[] | undefined;
   favorite!: Favorites;
-  netflixSpinner: boolean = true;
-
+  netflixSpinner: boolean=false;
+  isFirstLoad!:boolean;
   //audio all avvio di netflix
    sound = new Howl({
     src: ['assets/audio/audio.mp3']
@@ -25,13 +24,19 @@ export class MoviesComponent implements OnInit {
   constructor(private moviesSrv: AppService, private authSrv: AuthService) {}
 
   ngOnInit(): void {
-    this.sound.play();
-    setTimeout(() => {
-      this.netflixSpinner=false;
-
-    },4000);
-
-
+ //METODO PER FARE IL MODO CHE LANIMAZIONE INIZIALE SIA FATTA SOLO LA PRIMA VOLTA CHE SI FA IL LOGIN
+const isFirstLoad=sessionStorage.getItem('isFirstLoad')==='true';
+this.isFirstLoad= isFirstLoad
+    if (this.isFirstLoad) {
+      this.sound.play();
+      setTimeout(() => {
+        this.netflixSpinner = false;
+        this.isFirstLoad = false;
+      }, 4000);
+    } else {
+      this.netflixSpinner = false;
+    }
+sessionStorage.setItem('isFirstLoad', 'false')
 
 
      //CHIAMATA GET PER I FILMS

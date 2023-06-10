@@ -1,1 +1,25 @@
-<p>profile works!</p>
+
+
+<div class="container mt-5">
+  <div class="card  "   *ngIf="user" >
+    <h1 class="text-danger bg-black mb-0">Dati Utente:</h1>
+    <div class="h-100 bg-black d-flex justify-content-around" >
+
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div class="user-info">
+            <p><span class="text-danger">Nome: </span> {{ user.user.nome }} </p>
+            <p><span class="text-danger">Cognome:</span> {{ user.user.cognome }}</p>
+            <p><span class="text-danger">Email: </span> {{ user.user.email }}</p>
+            <p><span class="text-danger">Durata sessione: </span> {{ sessionDuration }}</p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+
+            <a class="text-white" [routerLink]="['/film']" routerLinkActive="active">Indietro</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+

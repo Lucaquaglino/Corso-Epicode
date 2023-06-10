@@ -93,13 +93,8 @@
     },
     {
       "userId": 8,
-      "movieId": 632357,
-      "id": 3
-    },
-    {
-      "userId": 8,
       "movieId": 578701,
-      "id": 4
+      "id": 3
     }
   ],
   "genres": [

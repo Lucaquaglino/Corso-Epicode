@@ -11,6 +11,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AuthGuard } from './auth/auth.guard';
+import { InfoFilmComponent } from './components/info-film/info-film.component';
 
 
 const rotte: Route[] = [
@@ -26,6 +27,11 @@ const rotte: Route[] = [
       canActivate: [AuthGuard]
   },
   {
+    path: 'infoFIlm/:id',
+    component: InfoFilmComponent,
+    canActivate: [AuthGuard]
+},
+  {
       path: 'login',
       component: LoginComponent
   },
@@ -36,9 +42,13 @@ const rotte: Route[] = [
   {
     path: 'navBar',
     component: NavBarComponent,
-
+    canActivate: [AuthGuard]
 },
-
+{
+  path: 'profilo',
+  component: ProfileComponent,
+  canActivate: [AuthGuard]
+},
 ]
 
 
@@ -53,7 +63,8 @@ const rotte: Route[] = [
     MoviesComponent,
     ProfileComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    InfoFilmComponent
   ],
   imports: [
     BrowserModule,

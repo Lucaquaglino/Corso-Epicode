@@ -36,6 +36,9 @@ export class AuthService {
             // Il login è una POST e non una GET perché deve scrivere il token
             tap((data) => {
                 console.log(data);
+                const timestamp = new Date().getTime(); // Ottieni il timestamp corrente
+            data.timestamp = timestamp;
+            console.log(timestamp);
                 this.authSubj.next(data); // Il BehaviourSubject riceve i dati del login per poi passarli alla proprietà user$
                 this.utente = data;
                 console.log(this.utente);

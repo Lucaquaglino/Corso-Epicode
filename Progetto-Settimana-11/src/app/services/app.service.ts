@@ -25,4 +25,10 @@ export class AppService {
   eliminaFavorites(favoriteID: number) {
     return this.http.delete(`http://localhost:4201/favorites/${favoriteID}`);
   }
+//CHIAMATA GET PER INFO FILM SPECIFICO
+  getFilmById(id: number) {
+    return this.http.get<Movies[]>(`http://localhost:4201/movies-popular/${id}`);
+  }
+
+
 }

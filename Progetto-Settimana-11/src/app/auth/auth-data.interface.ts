@@ -6,4 +6,5 @@ export interface AuthData {
         nome: string;
         cognome: string;
     };
+    timestamp: number;
 }

@@ -24,6 +24,8 @@ export class LoginComponent implements OnInit {
             this.isLoading = false;
             alert('Login effettuato!');
             this.router.navigate(['/film']);
+            sessionStorage.setItem('isFirstLoad', 'true'); ///////sessione per n
+
         } catch (error) {
             this.isLoading = false;
             alert('Login sbagliato!');
