@@ -8,7 +8,7 @@ Run `npm run fullstack` for a dev server. Navigate to `http://localhost:4200/`. 
 
 ## Json call API
 
- Navigate to `http://localhost:4201/
+ Navigate to `http://localhost:4201/`
 
 ## Code scaffolding
 

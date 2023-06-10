@@ -3,6 +3,9 @@ import { Movies } from 'src/app/models/movies.interface';
 import { AppService } from 'src/app/services/app.service';
 import { Favorites } from 'src/app/models/favorites.interface';
 import { AuthService } from 'src/app/auth/auth.service';
+import { Howl } from 'howler';
+
+
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
@@ -14,13 +17,20 @@ export class MoviesComponent implements OnInit {
   favorite!: Favorites;
   netflixSpinner: boolean = true;
 
+  //audio all avvio di netflix
+   sound = new Howl({
+    src: ['assets/audio/audio.mp3']
+  });
+
   constructor(private moviesSrv: AppService, private authSrv: AuthService) {}
 
   ngOnInit(): void {
-
+    this.sound.play();
     setTimeout(() => {
       this.netflixSpinner=false;
-    },2000);
+
+    },4000);
+
 
 
 
