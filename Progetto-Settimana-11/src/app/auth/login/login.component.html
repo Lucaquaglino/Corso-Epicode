@@ -1,0 +1,48 @@
+<div class="sfondo d-flex align-items-center">
+  <div class="form-box  m-auto">
+    <form class="form" #form="ngForm" (ngSubmit)="accedi(form)">
+      <img
+        src="https://cdn.iconscout.com/icon/free/png-256/free-netflix-282224.png"
+        alt=""
+        srcset=""
+        class="m-auto"
+      />
+      <span class="subtitle text-white"
+        >Accedi con la tua mail e password.</span
+      >
+      <div class="form-container">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="e-mail"
+          required
+          ngModel
+        />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="form-control"
+          placeholder="Password"
+          required
+          ngModel
+        />
+      </div>
+
+      <button type="submit" [disabled]="form.invalid">Accedi</button>
+    </form>
+    <div class="form-section">
+      <p class="text-secondary">
+        Non hai un account?
+        <a
+          class="nav-link registrati"
+          [routerLink]="['/register']"
+          routerLinkActive="active"
+          >Registrati</a
+        >
+      </p>
+    </div>
+  </div>
+</div>

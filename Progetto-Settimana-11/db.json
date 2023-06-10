@@ -1,0 +1,983 @@
+{
+  "users": [
+    {
+      "email": "n@p.com",
+      "password": "$2a$10$SmgrR2x18eeoJMFtk9N9FORmSTDG0ToOtqOS0Ik0jgiRWoAqe7sT2",
+      "name": "nicola toledo",
+      "id": 1
+    },
+    {
+      "email": "dario@dario.com",
+      "password": "$2a$10$ZLY63quWnMVo0lO951uFdOJRfUxeo8U6YJ/Cue06Vgp4Ad8S/CjaC",
+      "name": "Dario",
+      "id": 2
+    },
+    {
+      "email": "mario@rossi.com",
+      "password": "$2a$10$RsIosJKYgHyT8uo.bosI5uYpN0PVmA6xdnhjT4jIFcbKbVS2RsiRC",
+      "name": "Mario Rossi",
+      "id": 3
+    },
+    {
+      "email": "luca@iannice.gov",
+      "password": "$2a$10$5w60AiRs216q6mE4yxS5geckgGmD93VpzJP72A07rLlWL0bEH8mgO",
+      "name": "Luca Iannice",
+      "id": 4
+    },
+    {
+      "email": "ciao@ciao.com",
+      "password": "$2a$10$f7dz68Wj97I7T0YzHh4Y7eGRtZ19QMkm/b8y4AXvp1tLa0bbSVc3W",
+      "nome": "ciao",
+      "cognome": "ciao",
+      "id": 5
+    },
+    {
+      "email": "ciao@ciao.it",
+      "password": "$2a$10$xOaEp9DkqTulpnhriidswe2JIh/.izFuX5EJte9dCa8JY.mhiTvlK",
+      "nome": "ciao",
+      "cognome": "ciao",
+      "id": 6
+    },
+    {
+      "email": "ema@ema.it",
+      "password": "$2a$10$InVMHVcT24O.4uRZ62c2AOJW388Pcc/xilDFs5.SIXPlO9lpxAmiG",
+      "nome": "ema",
+      "cognome": "ema",
+      "id": 7
+    },
+    {
+      "email": "luca@lucaluca.it",
+      "password": "$2a$10$VwKotbcfxV2U/Z0hYhCkG.7jA4Cl1RKJnXnAQz.uF4sWydxcfAP1K",
+      "nome": "luca ",
+      "cognome": "luca",
+      "id": 8
+    },
+    {
+      "email": "ciao@ciaociaociao.it",
+      "password": "$2a$10$X.kU6rPBvbHY6kgdUa089eMM8E73dxsKaqiTPIQvutcDGiUO2Nn/G",
+      "nome": "ciao",
+      "cognome": "ciao",
+      "id": 9
+    },
+    {
+      "email": "ciaociaociao@ciao.it",
+      "password": "$2a$10$9/y1AAUR9sqFTx/x4akEt.6Uh.pVb.Baa/tmyWNT15xrQSyltkmpy",
+      "id": 10
+    },
+    {
+      "email": "ciaociaociaociao@ciao.it",
+      "password": "$2a$10$UnxMfA9FDe/wmjOvttkxAeF9R3M2xCUgDhp1Yk5UpAcDeGQaeLaJO",
+      "id": 11
+    },
+    {
+      "email": "ciao@ciao.net",
+      "password": "$2a$10$7HNv8.zLtB0JkQePxZOkHuZXDzzHQtHBG.MCzvmuDDQ.j/Zhw40HS",
+      "id": 12
+    },
+    {
+      "email": "luca@quaglino.it",
+      "password": "$2a$10$BOn4H2y9zY5qnTGbcr1XBOvbtsSuA6R6R.SJG4s0qpJw62JpR62.q",
+      "id": 13
+    }
+  ],
+  "favorites": [
+    {
+      "userId": 13,
+      "movieId": 632357,
+      "id": 1
+    },
+    {
+      "userId": 13,
+      "movieId": 578701,
+      "id": 2
+    },
+    {
+      "userId": 8,
+      "movieId": 632357,
+      "id": 3
+    },
+    {
+      "userId": 8,
+      "movieId": 578701,
+      "id": 4
+    }
+  ],
+  "genres": [
+    {
+      "id": 28,
+      "name": "Azione"
+    },
+    {
+      "id": 12,
+      "name": "Avventura"
+    },
+    {
+      "id": 16,
+      "name": "Animazione"
+    },
+    {
+      "id": 35,
+      "name": "Commedia"
+    },
+    {
+      "id": 80,
+      "name": "Crime"
+    },
+    {
+      "id": 99,
+      "name": "Documentario"
+    },
+    {
+      "id": 18,
+      "name": "Dramma"
+    },
+    {
+      "id": 10751,
+      "name": "Famiglia"
+    },
+    {
+      "id": 14,
+      "name": "Fantasy"
+    },
+    {
+      "id": 36,
+      "name": "Storia"
+    },
+    {
+      "id": 27,
+      "name": "Horror"
+    },
+    {
+      "id": 10402,
+      "name": "Musica"
+    },
+    {
+      "id": 9648,
+      "name": "Mistero"
+    },
+    {
+      "id": 10749,
+      "name": "Romance"
+    },
+    {
+      "id": 878,
+      "name": "Fantascienza"
+    },
+    {
+      "id": 10770,
+      "name": "televisione film"
+    },
+    {
+      "id": 53,
+      "name": "Thriller"
+    },
+    {
+      "id": 10752,
+      "name": "Guerra"
+    },
+    {
+      "id": 37,
+      "name": "Western"
+    }
+  ],
+  "movies-popular": [
+    {
+      "adult": false,
+      "backdrop_path": "/6ELCZlTA5lGUops70hKdB83WJxH.jpg",
+      "genre_ids": [
+        28,
+        14,
+        12
+      ],
+      "id": 460465,
+      "original_language": "en",
+      "original_title": "Mortal Kombat",
+      "overview": "Un pugile fallito scopre un segreto di famiglia che lo conduce ad un torneo mistico chiamato Mortal Kombat. Qui incontra un gruppo di guerrieri che combattono fino alla morte per salvare i regni dal malvagio stregone Shang Tsung.",
+      "popularity": 1909.664,
+      "poster_path": "/iW03OMEI3htIAV1P8FwM867PLIj.jpg",
+      "release_date": "2021-04-07",
+      "title": "Mortal Kombat",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 2659
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fPGeS6jgdLovQAKunNHX8l0avCy.jpg",
+      "genre_ids": [
+        28,
+        53,
+        10752
+      ],
+      "id": 567189,
+      "original_language": "en",
+      "original_title": "Tom Clancy's Without Remorse",
+      "overview": "John Kelly, un ex membro dei Navy SEAL, nel tentativo di vendicare l’omicidio di sua moglie, si ritroverà invischiato in una cospirazione ben più grande e pericolosa di quanto avrebbe potuto mai immaginare.",
+      "popularity": 1840.479,
+      "poster_path": "/zisnDuZBQWzio4ylon8AElnat7V.jpg",
+      "release_date": "2021-04-29",
+      "title": "Senza rimorso",
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 999
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iDdpiUnCeXvBmrkBFpL6lKsZt33.jpg",
+      "genre_ids": [
+        53,
+        18,
+        28,
+        9648
+      ],
+      "id": 578701,
+      "original_language": "en",
+      "original_title": "Those Who Wish Me Dead",
+      "overview": "Un ragazzino, dopo essere stato testimone di un omicidio, si ritrova inseguito da due gemelli assassini nella natura selvaggia del Montana. Con lui c'è un'esperta di sopravvivenza, incaricata di proteggerlo. Un incendio nei boschi minaccerà però la vita di tutti quanti.",
+      "popularity": 1932.947,
+      "poster_path": "/qDGaNdeIwgHHXKYypo19oupxnrK.jpg",
+      "release_date": "2021-05-05",
+      "title": "Quelli che mi vogliono morto",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 280
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/blk6UPEoaKwlFIEuHWhVEuTQULC.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 632357,
+      "original_language": "en",
+      "original_title": "The Unholy",
+      "overview": "Alice è una giovane ragazza con problemi di udito. Questa, dopo una presunta visita della Vergine Maria, è inspiegabilmente in grado di ascoltare, parlare e curare i malati. Mentre la voce si diffonde e le persone vicine e lontane accorrono per assistere ai suoi miracoli, un giornalista caduto in disgrazia che spera di rilanciare la sua carriera visita la piccola città del New England per indagare. Quando eventi terrificanti iniziano ad accadere attorno alla giovane miracolata, il giornalista inizia a chiedersi se questi fenomeni siano opera della Vergine Maria o qualcosa di molto più sinistro.",
+      "popularity": 1878.397,
+      "poster_path": "/dxBTcvdH9d6apXZGnThPIVEJ376.jpg",
+      "release_date": "2021-03-31",
+      "title": "Il sacro male",
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 301
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mYM8x2Atv4MaLulaV0KVJWI1Djv.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 804435,
+      "original_language": "en",
+      "original_title": "Vanquish",
+      "overview": "",
+      "popularity": 1583.635,
+      "poster_path": "/1jkNM1NHyHsxiBBuOlOeqgmidM0.jpg",
+      "release_date": "2021-04-16",
+      "title": "Vanquish",
+      "video": false,
+      "vote_average": 6,
+      "vote_count": 105
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg",
+      "genre_ids": [
+        28,
+        878
+      ],
+      "id": 399566,
+      "original_language": "en",
+      "original_title": "Godzilla vs. Kong",
+      "overview": "In un momento in cui i mostri camminano sulla Terra, la lotta dell'umanità per il suo futuro fa scatenare Godzilla e Kong su una rotta di collisione che vedrà le due forze più potenti della natura sul pianeta scontrarsi in una spettacolare battaglia per secoli. Mentre Monarch intraprende una pericolosa missione in un terreno inesplorato e scopre indizi sulle origini dei Titani, una cospirazione umana minaccia di spazzare via per sempre le creature, sia buone che cattive, dalla faccia della terra.",
+      "popularity": 1591.307,
+      "poster_path": "/6Xq0gAxrm8KMAKWP4KYYhPWoQXM.jpg",
+      "release_date": "2021-03-24",
+      "title": "Godzilla vs. Kong",
+      "video": false,
+      "vote_average": 8.1,
+      "vote_count": 5645
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6zbKgwgaaCyyBXE4Sun4oWQfQmi.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80,
+        35
+      ],
+      "id": 615457,
+      "original_language": "en",
+      "original_title": "Nobody",
+      "overview": "Hutch Mansell, padre e marito sottostimato e trascurato, è abituato a non reagire a nessuna umiliazione. Quando una notte due ladri irrompono nella sua abitazione in periferia, rifiuta di difendere se stesso o la sua famiglia, speranzo di prevenire violenze maggiori. Il figlio adolescente Blake è deluso dal suo comportamento e la moglie Becca comincia ad allontanarsi maggiormente da lui. All'indomani dell'accaduto, la rabbia che Hutch cova esplode spingendolo a manifestare tutta la violenza di cui è capace. Si ritroverà allora a dover difendere come meglio può la sua famiglia da un pericoloso avversario e ad assicurarsi di non essere mai più sottovalutato da nessuno.",
+      "popularity": 1286.494,
+      "poster_path": "/iECT5xNf72P7cx9LDMrEwhGYD5O.jpg",
+      "release_date": "2021-03-26",
+      "title": "Io sono Nessuno",
+      "video": false,
+      "vote_average": 8.4,
+      "vote_count": 1647
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xrAaJAn3hqkInq5kE1AGJqIGXyT.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 573680,
+      "original_language": "en",
+      "original_title": "The Banishing",
+      "overview": "",
+      "popularity": 1382.464,
+      "poster_path": "/xD9mc8JCVXA8T8u4Od7qOUBuGH4.jpg",
+      "release_date": "2021-04-29",
+      "title": "The Banishing",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 10
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3Ef8PWUiP1ehO1ESEroxb736srR.jpg",
+      "genre_ids": [
+        53,
+        28,
+        80
+      ],
+      "id": 808023,
+      "original_language": "en",
+      "original_title": "The Virtuoso",
+      "overview": "",
+      "popularity": 1423.673,
+      "poster_path": "/vXHzO26mJaOt4VO7ZFiM6No5ScT.jpg",
+      "release_date": "2021-04-30",
+      "title": "The Virtuoso",
+      "video": false,
+      "vote_average": 6.2,
+      "vote_count": 72
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fejok33Ijc6SppiEU1cfwA9Mo2.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18
+      ],
+      "id": 717192,
+      "original_language": "nl",
+      "original_title": "Ferry",
+      "overview": "Prima dell'impero criminale e dell'operazione di polizia, com'è iniziato tutto per Ferry Bouman, il narcoboss di \"Undercover\"? Con Frank Lammers ed Elise Schaap.",
+      "popularity": 1329.854,
+      "poster_path": "/w6n1pu9thpCVHILejsuhKf3tNCV.jpg",
+      "release_date": "2021-05-14",
+      "title": "Ferry",
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 53
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xPpXYnCWfjkt3zzE0dpCNME1pXF.jpg",
+      "genre_ids": [
+        16,
+        28,
+        12,
+        14,
+        18
+      ],
+      "id": 635302,
+      "original_language": "ja",
+      "original_title": "劇場版「鬼滅の刃」無限列車編",
+      "overview": "Enmu, recentemente liberato dalle celle Muzan, si propone di attaccare un misterioso treno in movimento. Nel corso dell'attacco, il demone consuma molti passeggeri. Tanjiro Kamado viene in soccorso, ma questo treno in movimento trasporta più di un cattivo demone da combattere.",
+      "popularity": 1039.805,
+      "poster_path": "/m9cn5mhW519QKr1YGpGxNWi98VJ.jpg",
+      "release_date": "2020-10-16",
+      "title": "Demon Slayer - The Movie: Mugen Train",
+      "video": false,
+      "vote_average": 8.4,
+      "vote_count": 1034
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg",
+      "genre_ids": [
+        28,
+        12,
+        14,
+        878
+      ],
+      "id": 791373,
+      "original_language": "en",
+      "original_title": "Zack Snyder's Justice League",
+      "overview": "In Zack Snyder’s Justice League, determinato ad assicurarsi che il sacrificio finale di Superman (Henry Cavill) non sia stato vano, Bruce Wayne (Ben Affleck) unisce le forze con Diana Prince (Gal Gadot) con lo scopo di reclutare una squadra di metaumani, al fine di proteggere il mondo da un minaccia imminente di proporzioni catastrofiche. Il compito si rivela più difficile di quanto Bruce immaginasse, poiché ogni componente deve affrontare i demoni del proprio passato, per trascendere da ciò che li ha bloccati, permettendo loro di unirsi e formare finalmente una lega di eroi senza precedenti. Finalmente insieme, Batman (Affleck), Wonder Woman (Gadot), Aquaman (Jason Momoa), Cyborg (Ray Fisher) e Flash (Ezra Miller) potrebbero essere in ritardo per salvare il pianeta da Steppenwolf, DeSaad e Darkseid e dalle loro terribili intenzioni.",
+      "popularity": 1004.363,
+      "poster_path": "/tnAuB8q5vv7Ax9UAEje5Xi4BXik.jpg",
+      "release_date": "2021-03-18",
+      "title": "Zack Snyder's Justice League",
+      "video": false,
+      "vote_average": 8.5,
+      "vote_count": 5544
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gPKcJzrbgs1670fOeKN1xQH9mNa.jpg",
+      "genre_ids": [
+        80,
+        18,
+        9648,
+        53
+      ],
+      "id": 823855,
+      "original_language": "en",
+      "original_title": "I Am All Girls",
+      "overview": "Un detective della Polizia forma uno strano legame con un serial killer per fermare un gruppo di criminali che operano a livello globale e che trattano la compravendita di minorenni.",
+      "popularity": 1610.42,
+      "poster_path": "/m6bUeV4mczG3z2YXXr5XDKPsQzv.jpg",
+      "release_date": "2021-05-14",
+      "title": "I Am All Girls",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 65
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/n2y7T8wJVjJ8yLhQXQgNCpsC3ga.jpg",
+      "genre_ids": [
+        10751,
+        16,
+        35
+      ],
+      "id": 811367,
+      "original_language": "en",
+      "original_title": "22 vs. Earth",
+      "overview": "Prima degli eventi raccontati nel film \"Soul\" della Pixar, 22, che si rifiuta di andare sulla Terra, arruola una banda di altre 5 nuove anime e prova a fomentare una ribellione. Tuttavia, le attività di 22 e della sua combriccola conducono a risultati inaspettati e l'insurrezione si conclude con una rivelazione sorprendente sul significato della vita.",
+      "popularity": 886.638,
+      "poster_path": "/A5aMLpqnvF3IfJ9RRnLwntIMtrm.jpg",
+      "release_date": "2021-04-30",
+      "title": "22 contro la Terra",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 96
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hJuDvwzS0SPlsE6MNFOpznQltDZ.jpg",
+      "genre_ids": [
+        16,
+        12,
+        14,
+        10751,
+        28
+      ],
+      "id": 527774,
+      "original_language": "en",
+      "original_title": "Raya and the Last Dragon",
+      "overview": "A Kumandra, terra divisa in cinque regioni che insieme formano un drago, i draghi non esistono più e una forza malvagia e oscura ha preso il loro posto. Raya, una guerriera forte e coraggiosa, decide di partire per un viaggio alla ricerca dell’ultimo drago in grado di salvare il regno. Nella sua avventura incontrerà Sisu, un drago ispirato agli spiriti d’acqua e rimasto intrappolato nel corpo di un essere umano. Raya lo aiuterà a tornare ad essere un vero drago e insieme proveranno a salvare la terra.",
+      "popularity": 895.896,
+      "poster_path": "/zDgV6rPCqAUDOtfKvvxExOiR2om.jpg",
+      "release_date": "2021-03-03",
+      "title": "Raya e l'ultimo drago",
+      "video": false,
+      "vote_average": 8.2,
+      "vote_count": 2908
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lHhc60NXYzswU4TvKSo45nY9Jzs.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751,
+        12
+      ],
+      "id": 726684,
+      "original_language": "fr",
+      "original_title": "Miraculous World : Shanghai, la légende de Ladydragon",
+      "overview": "",
+      "popularity": 1019.449,
+      "poster_path": "/tf9nWFyJ745mBFkXZtPWabDYBR3.jpg",
+      "release_date": "2021-04-04",
+      "title": "Miraculous World : Shanghai, la légende de Ladydragon",
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 339
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qqkpwhiB1BQcSvegL10uHKMzKKl.jpg",
+      "genre_ids": [
+        16,
+        35,
+        14
+      ],
+      "id": 813258,
+      "original_language": "en",
+      "original_title": "Monster Pets: A Hotel Transylvania Short",
+      "overview": "Drac prova alcuni nuovi animali domestici mostruosi per aiutare a occupare Tinkles per il tempo di gioco.",
+      "popularity": 925.643,
+      "poster_path": "/dkokENeY5Ka30BFgWAqk14mbnGs.jpg",
+      "release_date": "2021-04-02",
+      "title": "Cuccioli mostruosi - Un corto di Hotel Transylvania",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 136
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yC4DRg5aGgNpkHpUDpLtBqzownS.jpg",
+      "genre_ids": [
+        878,
+        28
+      ],
+      "id": 586047,
+      "original_language": "ko",
+      "original_title": "서복",
+      "overview": "",
+      "popularity": 1105.265,
+      "poster_path": "/xdrFKWpUx2JjK7BeUJGA5iaI5rA.jpg",
+      "release_date": "2021-04-12",
+      "title": "서복",
+      "video": false,
+      "vote_average": 8,
+      "vote_count": 46
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/c0izdYdnTe4uMRifHgvTA85wPz0.jpg",
+      "genre_ids": [
+        28,
+        27,
+        53
+      ],
+      "id": 503736,
+      "original_language": "en",
+      "original_title": "Army of the Dead",
+      "overview": "Dopo un'epidemia zombie a Las Vegas una squadra di mercenari si prepara per il maggiore azzardo di sempre: intrufolarsi nella zona sottoposta a quarantena e mettere a segno la rapina più grande mai tentata.",
+      "popularity": 1205.478,
+      "poster_path": "/f34KSzU0eC7LvspipDMNhqaJPWq.jpg",
+      "release_date": "2021-05-14",
+      "title": "Army of the Dead",
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 842
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5Zv5KmgZzdIvXz2KC3n0MyecSNL.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "id": 634528,
+      "original_language": "en",
+      "original_title": "The Marksman",
+      "overview": "",
+      "popularity": 721.108,
+      "poster_path": "/6vcDalR50RWa309vBH1NLmG2rjQ.jpg",
+      "release_date": "2021-01-15",
+      "title": "The Marksman",
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 491
+    }
+  ],
+  "movies-toprated": [
+    {
+      "adult": false,
+      "backdrop_path": "/gNBCvtYyGPbjPCT1k3MvJuNuXR6.jpg",
+      "genre_ids": [
+        35,
+        18,
+        10749
+      ],
+      "id": 19404,
+      "original_language": "hi",
+      "original_title": "दिलवाले दुल्हनिया ले जायेंगे",
+      "overview": "",
+      "popularity": 16.82,
+      "poster_path": "/2CAL2433ZeIihfX1Hb2139CX0pW.jpg",
+      "release_date": "1995-10-20",
+      "title": "Il coraggioso prenderà la sposa",
+      "video": false,
+      "vote_average": 8.7,
+      "vote_count": 2898
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jtAI6OJIWLWiRItNSZoWjrsUtmi.jpg",
+      "genre_ids": [
+        10749
+      ],
+      "id": 724089,
+      "original_language": "en",
+      "original_title": "Gabriel's Inferno Part II",
+      "overview": "",
+      "popularity": 6.851,
+      "poster_path": "/pci1ArYW7oJ2eyTo2NMYEKHHiCP.jpg",
+      "release_date": "2020-07-31",
+      "title": "Gabriel's Inferno Part II",
+      "video": false,
+      "vote_average": 8.7,
+      "vote_count": 1257
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iNh3BivHyg5sQRPP1KOkzguEX0H.jpg",
+      "genre_ids": [
+        18,
+        80
+      ],
+      "id": 278,
+      "original_language": "en",
+      "original_title": "The Shawshank Redemption",
+      "overview": "Siamo nel 1946. Processato per l'omicidio della moglie e del suo amante, Andy, un bancario del New England, viene condannato a un doppio ergastolo e recluso nel penitenziario di Shawshank. All'inizio è vittima delle violenze dei reclus, poi però diventa il consulente finanziario delle guardie. Scopre così che il direttore falsifica i libri contabili intestando i conti a un fittizio Randall Stevens. Fuggito di prigione attraverso un tunnel costruito negli anni, Andy assume l'identità di Randall Stevens, denuncia il direttore e va in Messico.",
+      "popularity": 40.573,
+      "poster_path": "/9OxcvTJwZDjQTFvY2NxiwnSrQS6.jpg",
+      "release_date": "1994-09-23",
+      "title": "Le ali della libertà",
+      "video": false,
+      "vote_average": 8.7,
+      "vote_count": 18967
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rSPw7tgCH9c6NqICZef4kZjFOQ5.jpg",
+      "genre_ids": [
+        18,
+        80
+      ],
+      "id": 238,
+      "original_language": "en",
+      "original_title": "The Godfather",
+      "overview": "Anni Quaranta. Come è consuetudine, durante il rinfresco per festeggiare le nozze della figlia Conny con Carlo, il \"padrino\" don Vito Corleone promette assistenza e protezione a familiari e amici. Invia il figliastro Tom Hagen in California per convincere in ogni modo il produttore Jack Woltz a scritturare il cantante Johnny nel suo prossimo film. Woltz non acconsente. Tom allora lo costringe ad accettare con un \"avvertimento\": l'uccisione del suo cavallo di razza preferito. Sollozzo, a nome della potente \"famiglia\" Tartaglia, chiede a Corleone finanziamenti e appoggi per il traffico di droga. Il rifiuto scatena una lotta cruenta tra le due cosche: lo stesso don Vito viene ferito gravemente; il figlio minore Michael lo salva da un secondo attentato. Michael, poi, scavalcando l'irruento fratello Sonny e Tom, temporeggiatore, organizza un incontro con Sollozzo e con il corrotto capitano di polizia McCluskey uccidendoli entrambi.",
+      "popularity": 48.947,
+      "poster_path": "/r4gnMXoY1efvaolNDjn3nj4046S.jpg",
+      "release_date": "1972-03-14",
+      "title": "Il padrino",
+      "video": false,
+      "vote_average": 8.7,
+      "vote_count": 14321
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fQq1FWp1rC89xDrRMuyFJdFUdMd.jpg",
+      "genre_ids": [
+        10749,
+        35
+      ],
+      "id": 761053,
+      "original_language": "en",
+      "original_title": "Gabriel's Inferno Part III",
+      "overview": "",
+      "popularity": 23.598,
+      "poster_path": "/fYtHxTxlhzD4QWfEbrC1rypysSD.jpg",
+      "release_date": "2020-11-19",
+      "title": "Gabriel's Inferno Part III",
+      "video": false,
+      "vote_average": 8.7,
+      "vote_count": 816
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w2uGvCpMtvRqZg6waC1hvLyZoJa.jpg",
+      "genre_ids": [
+        10749
+      ],
+      "id": 696374,
+      "original_language": "en",
+      "original_title": "Gabriel's Inferno",
+      "overview": "",
+      "popularity": 9.906,
+      "poster_path": "/oyG9TL7FcRP4EZ9Vid6uKzwdndz.jpg",
+      "release_date": "2020-05-29",
+      "title": "Gabriel's Inferno",
+      "video": false,
+      "vote_average": 8.7,
+      "vote_count": 2044
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/loRmRzQXZeqG78TqZuyvSlEQfZb.jpg",
+      "genre_ids": [
+        18,
+        36,
+        10752
+      ],
+      "id": 424,
+      "original_language": "en",
+      "original_title": "Schindler's List",
+      "overview": "Tratto dal libro di Thomas Keneally è la vera storia di Oscar Schindler, industriale tedesco, che nel 1938 capisce che è bene legarsi ai comandanti militari. Li frequenta nei locali notturni, offre bottiglie preziose. Quando gli ebrei sono relegati nel ghetto di Cracovia Schindler riesce a farsene assegnare alcune centinaia come operai in una fabbrica di pentole. All'inizio sembra sfruttarli, in realtà li salva. Di fronte alla persecuzione tremenda, il tedesco trasforma quella sua prima iniziativa in una vera missione, fino a comprare letteralmente le vite di quasi milleduecento ebrei (la famosa lista) che sicuramente morirebbero nel campo di Auschwitz.",
+      "popularity": 29.343,
+      "poster_path": "/m0pV0fmMERzCvPVQbLLrPPLl5q1.jpg",
+      "release_date": "1993-11-30",
+      "title": "Schindler's List",
+      "video": false,
+      "vote_average": 8.6,
+      "vote_count": 11402
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/poec6RqOKY9iSiIUmfyfPfiLtvB.jpg",
+      "genre_ids": [
+        18,
+        80
+      ],
+      "id": 240,
+      "original_language": "en",
+      "original_title": "The Godfather: Part II",
+      "overview": "Il film tratta della giovinezza e dei primi passi nel mondo del crimine di Vito Corleone, e delle difficoltà cinquant'anni più tardi di suo figlio, Michael, a mantenere in piedi l'impero Corleone. Il tutto tra vicende di emigrazione, tradimenti familiari, inchieste governative e affari.",
+      "popularity": 33.194,
+      "poster_path": "/x3tDZOQn1jxaoVd3RJLECX6QGvd.jpg",
+      "release_date": "1974-12-20",
+      "title": "Il padrino - Parte II",
+      "video": false,
+      "vote_average": 8.6,
+      "vote_count": 8549
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dIWwZW7dJJtqC6CgWzYkNVKIUm8.jpg",
+      "genre_ids": [
+        10749,
+        16,
+        18
+      ],
+      "id": 372058,
+      "original_language": "ja",
+      "original_title": "君の名は。",
+      "overview": "Mitsuha è una studentessa che vive in una piccola città rurale e desidera trasferirsi a Tokyo, nella grande metropoli dove ogni sogno si può realizzare. Taki è uno studente di liceo che vive proprio a Tokyo, ha un lavoro part-time in un ristorante italiano, ma vorrebbe lavorare nel campo dell’arte o dell’architettura. Una notte, Mitsuha sogna di essere un giovane uomo, si ritrova in una stanza che non conosce, ha nuovi amici e lo skyline di Tokyo si apre dinnanzi al suo sguardo. Nello stesso momento Taki sogna di essere una ragazzina che vive in una piccola città di montagna che non ha mai visitato. Ma quale sarà il segreto che si cela dietro questi strani sogni incrociati?",
+      "popularity": 84.171,
+      "poster_path": "/z26TZXh7lqrRVCIy1HXTTz3Fu2X.jpg",
+      "release_date": "2016-08-26",
+      "title": "Your Name.",
+      "video": false,
+      "vote_average": 8.6,
+      "vote_count": 7478
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/Ab8mkHmkYADjU7wQiOkia9BzGvS.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        14
+      ],
+      "id": 129,
+      "original_language": "ja",
+      "original_title": "千と千尋の神隠し",
+      "overview": "La piccola Chihiro non sopporta l'idea di traslocare e di perdere i propri amici, ma non può far niente per impedirlo. Proprio quando la famiglia è in viaggio verso la nuova casa, il padre imbocca una strada sterrata che termina davanti a un tunnel misterioso. I genitori sceglieranno di attraversarlo nonostante le rimostranze di Chihiro, per giungere a un parco dei divertimenti abbandonato, almeno apparentemente.",
+      "popularity": 59.022,
+      "poster_path": "/3PV6lq9BNmoyyDXr5tdNeeESEMn.jpg",
+      "release_date": "2001-07-20",
+      "title": "La città incantata",
+      "video": false,
+      "vote_average": 8.5,
+      "vote_count": 11363
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg",
+      "genre_ids": [
+        35,
+        53,
+        18
+      ],
+      "id": 496243,
+      "original_language": "ko",
+      "original_title": "기생충",
+      "overview": "Tutta la famiglia di Ki-taek è senza lavoro. Ki-taek è particolarmente interessata allo stile di vita della ricchissima famiglia Park. Un giorno, suo figlio riesce a farsi assumere dai Park e le due famiglie si ritrovano così intrecciate da una serie di eventi incontrollabili.",
+      "popularity": 100.563,
+      "poster_path": "/dJFTwh20N23ZeSDIaCkOZTNoGn1.jpg",
+      "release_date": "2019-05-30",
+      "title": "Parasite",
+      "video": false,
+      "vote_average": 8.5,
+      "vote_count": 11416
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yeJhRNtE4XW2lOoVVFO9iuDr3AL.jpg",
+      "genre_ids": [
+        10751,
+        12,
+        16,
+        14
+      ],
+      "id": 441130,
+      "original_language": "en",
+      "original_title": "Wolfwalkers",
+      "overview": "Un’apprendista cacciatrice si reca in Irlanda con suo padre per eliminare gli ultimi, temuti, esemplari di lupo. Ma tutto cambia quando fa amicizia con un’altra giovane, uno spirito libero di una misteriosa tribù che di notte, si dice, si trasforma in lupo.",
+      "popularity": 25.103,
+      "poster_path": "/9ivflTRrOfHbTstiuj4GIMOQ4Rc.jpg",
+      "release_date": "2020-10-26",
+      "title": "Wolfwalkers - Il popolo dei lupi",
+      "video": false,
+      "vote_average": 8.5,
+      "vote_count": 461
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xMIyotorUv2Yz7zpQz2QYc8wkWB.jpg",
+      "genre_ids": [
+        14,
+        18,
+        80
+      ],
+      "id": 497,
+      "original_language": "en",
+      "original_title": "The Green Mile",
+      "overview": "E' il racconto che Paul Edgecomb fa all'amica Elaine Connelly in una casa di riposo. Sono passati circa sessanta anni da quando lavorava come capo delle guardie del braccio della morte nel penitenziario di Could Mountain. Durante la grande depressione, nel carcere del sud degli Usa, Edgecomb si occupava di quattro assassini che attendevano di compiere la loro ultima passeggiata lungo il 'Miglio verde', il corridoio rivestito di linoleum verde che li avrebbe condotti nella stanza della sedia elettrica. Fra questi c'era anche John Coffrey, un ragazzone nero condannato per l'omicidio di due gemelline di nove anni. Nonostante avesse le dimensioni e la forza per uccidere chiunque, Coffrey aveva un carattere semplice e ingenuo: era davvero lui il colpevole?",
+      "popularity": 43.797,
+      "poster_path": "/kptqTcldosy8JPf75JT16oTYUMB.jpg",
+      "release_date": "1999-12-10",
+      "title": "Il miglio verde",
+      "video": false,
+      "vote_average": 8.5,
+      "vote_count": 12286
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/88J6waYVTta8Qz3iX3qUeWNA5d5.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 447362,
+      "original_language": "en",
+      "original_title": "Life in a Year",
+      "overview": "",
+      "popularity": 89.323,
+      "poster_path": "/7EuZIYEHLTu1G69maFLwg13u5iB.jpg",
+      "release_date": "2020-11-27",
+      "title": "Life in a Year",
+      "video": false,
+      "vote_average": 8.5,
+      "vote_count": 588
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9guoVF7zayiiUq5ulKQpt375VIy.jpg",
+      "genre_ids": [
+        16,
+        28,
+        14,
+        12
+      ],
+      "id": 592350,
+      "original_language": "ja",
+      "original_title": "僕のヒーローアカデミア THE MOVIE ヒーローズ：ライジング",
+      "overview": "All Might, l’eroe numero 1 ammirato in tutto il mondo, a malincuore dovrà rinunciare al suo ruolo di simbolo della pace. Proprio per questo, una figura oscura che si muove dietro le quinte deciderà di uscire allo scoperto. E un Villain di nome Nine farà la sua comparsa…",
+      "popularity": 266.962,
+      "poster_path": "/furv9Ruwio4pCs5vZG9cVZqdKHh.jpg",
+      "release_date": "2019-12-20",
+      "title": "My Hero Academia: The Movie - Heroes Rising",
+      "video": false,
+      "vote_average": 8.5,
+      "vote_count": 713
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+      "genre_ids": [
+        53,
+        80
+      ],
+      "id": 680,
+      "original_language": "en",
+      "original_title": "Pulp Fiction",
+      "overview": "Le vite di due gangster, di un pugile e della moglie di un potente boss della malavita finiscono per intrecciarsi in una paradossale storia di violenza, vendetta e redenzione.",
+      "popularity": 42.296,
+      "poster_path": "/jGSFXI9CidmdsWwg8LwUjMk3ONe.jpg",
+      "release_date": "1994-09-10",
+      "title": "Pulp Fiction",
+      "video": false,
+      "vote_average": 8.5,
+      "vote_count": 21141
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qqHQsStV6exghCM7zbObuYBiYxw.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 389,
+      "original_language": "en",
+      "original_title": "12 Angry Men",
+      "overview": "Dodici giurati sono riuniti in consiglio per decidere della sorte di un diciottenne accusato d'omicidio. Undici lo ritengono colpevole. Soltanto uno, Davis, lo considera innocente; trattandosi di una possibile condanna a morte, è necessaria l'unanimità. Con appassionata eloquenza e con il rigore dei suoi ragionamenti, Davis convince gli altri uno a uno che l'accusa non regge.",
+      "popularity": 24.691,
+      "poster_path": "/6lvkCuYuqpbmK1OPcv5oKleWbgV.jpg",
+      "release_date": "1957-04-10",
+      "title": "La parola ai giurati",
+      "video": false,
+      "vote_average": 8.5,
+      "vote_count": 5581
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/uWVkEo9PWHu9algZsiLPi6sRU64.jpg",
+      "genre_ids": [
+        36,
+        10402,
+        18
+      ],
+      "id": 556574,
+      "original_language": "en",
+      "original_title": "Hamilton",
+      "overview": "",
+      "popularity": 17.803,
+      "poster_path": "/h1B7tW0t399VDjAcWJh8m87469b.jpg",
+      "release_date": "2020-07-03",
+      "title": "Hamilton",
+      "video": false,
+      "vote_average": 8.5,
+      "vote_count": 724
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg",
+      "genre_ids": [
+        28,
+        12,
+        14,
+        878
+      ],
+      "id": 791373,
+      "original_language": "en",
+      "original_title": "Zack Snyder's Justice League",
+      "overview": "In Zack Snyder’s Justice League, determinato ad assicurarsi che il sacrificio finale di Superman (Henry Cavill) non sia stato vano, Bruce Wayne (Ben Affleck) unisce le forze con Diana Prince (Gal Gadot) con lo scopo di reclutare una squadra di metaumani, al fine di proteggere il mondo da un minaccia imminente di proporzioni catastrofiche. Il compito si rivela più difficile di quanto Bruce immaginasse, poiché ogni componente deve affrontare i demoni del proprio passato, per trascendere da ciò che li ha bloccati, permettendo loro di unirsi e formare finalmente una lega di eroi senza precedenti. Finalmente insieme, Batman (Affleck), Wonder Woman (Gadot), Aquaman (Jason Momoa), Cyborg (Ray Fisher) e Flash (Ezra Miller) potrebbero essere in ritardo per salvare il pianeta da Steppenwolf, DeSaad e Darkseid e dalle loro terribili intenzioni.",
+      "popularity": 887.066,
+      "poster_path": "/tnAuB8q5vv7Ax9UAEje5Xi4BXik.jpg",
+      "release_date": "2021-03-18",
+      "title": "Zack Snyder's Justice League",
+      "video": false,
+      "vote_average": 8.5,
+      "vote_count": 5566
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hQQTE285UQB1lLY1XiioQ77LYnC.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10749,
+        18,
+        14
+      ],
+      "id": 572154,
+      "original_language": "ja",
+      "original_title": "青春ブタ野郎はゆめみる少女の夢を見ない",
+      "overview": "In questo film Sakuta scoprirà finalmente la verità su Shōko Makinohara, la misteriosa ragazza che anni prima lo aiutò a sopportare le primissime conseguenze della \"shishunki shōkōgun\" e che, anni dopo, ha rincontrato sotto le vesti di ragazzina, che però non ricorda nulla di lui.",
+      "popularity": 101.316,
+      "poster_path": "/lyx0rfL4g6mfUJfSC17pEYXR3xW.jpg",
+      "release_date": "2019-06-15",
+      "title": "Rascal Does Not Dream of Bunny Girl Senpai",
+      "video": false,
+      "vote_average": 8.5,
+      "vote_count": 267
+    }
+  ]
+}

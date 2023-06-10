@@ -1,0 +1,80 @@
+<div class="sfondo d-flex align-items-center">
+  <div class="form-box m-auto">
+    <form class="form" #form="ngForm" (ngSubmit)="registra(form)">
+      <img
+        src="https://cdn.iconscout.com/icon/free/png-256/free-netflix-282224.png"
+        alt=""
+        srcset=""
+        class="m-auto"
+      />
+
+      <span class="subtitle text-white">Crea un account con la tua mail.</span>
+      <div class="form-container">
+        <input
+          type="text"
+          class="form-control"
+          name="nome"
+          placeholder="Nome"
+          required
+          ngModel
+          id="nome"
+          [ngModelOptions]="{ standalone: true }"
+        />
+        <input
+          type="text"
+          class="form-control"
+          name="cognome"
+          placeholder="Cognome"
+          required
+          ngModel
+          id="cognome"
+          [ngModelOptions]="{ standalone: true }"
+        />
+
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="e-mail"
+          required
+          ngModel
+        />
+
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="form-control"
+          placeholder="Password"
+          required
+          ngModel
+        />
+      </div>
+      <button
+        type="submit"
+        [disabled]="form.invalid"
+        class="btn btn-primary mt-3"
+      >
+        Registrati
+      </button>
+      <span
+        *ngIf="isLoading"
+        class="spinner-border spinner-border-sm"
+        role="status"
+      ></span>
+    </form>
+    <div class="form-section">
+      <p class="text-secondary">
+        Hai già un account?
+        <a
+          class="nav-link regisrati"
+          style="color: #e50914"
+          [routerLink]="['/login']"
+          routerLinkActive="active"
+          >Accedi</a
+        >
+      </p>
+    </div>
+  </div>
+</div>
